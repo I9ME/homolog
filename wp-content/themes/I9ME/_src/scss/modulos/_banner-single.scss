@@ -1,0 +1,37 @@
+.banner-single{
+	$self : &;
+	@extend %boxFull;
+	@include span(1);
+	background: #145c96;
+  	position: relative;
+	background-repeat: no-repeat;
+	height: 420px;
+
+    @include e('header'){
+    	@include span(1);
+    		position: absolute;
+    		bottom: 100px;
+        left: 0;
+    }
+	@include e('title'){
+		color: $white;
+		text-align: center;
+
+		&:after{
+			content: "";
+		    border-bottom: 5px solid #054c7f;
+		    width: 100%;
+		    display: block;
+		    max-width: 60px;
+		    margin: 15px auto;
+		}
+	}
+	@include e('subtitle'){
+		color: $white;
+		text-align: center;
+	    max-width: 480px;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+}

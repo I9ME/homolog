@@ -1,0 +1,92 @@
+.lista{
+  	$self : &;
+  	@extend %boxFull;
+  	@include span(1);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: hsla(0, 0%, 100%, 0.49);
+	position: relative;
+	min-height:718px;
+
+	@include respond-to(sm){
+		margin-top: 90px;
+		min-height: inherit;
+		background: none;
+	}
+
+	@include respond-to(md){
+		min-height: initial;
+	}
+
+	@include m('lista-web'){
+		background:hsla(0, 0%, 92%, 0.49);
+		z-index: 9;
+
+		@include respond-to(sm){
+			background: none;
+		}
+	}
+  	
+	li:first-child, li:nth-child(2){
+		margin-bottom: 60px$i;
+	}
+	// @include respond-to(sm){
+	// 	min-height: 915px;
+	// 	margin: 0;
+	// 	margin-top: 90px;
+	// }
+		
+  	@include e('item'){
+  		@include span(.5);
+
+			figure{
+				margin: 0;
+				padding: 0;
+				text-align: center;
+
+				@include respond-to(sm){
+					padding: 0 25px;
+				}
+			}
+  	}
+
+  	@include e('bordas'){
+  		border: 1px solid #afafaf;
+		border-radius: 50px;
+	    width: 100px;
+	    display: block;
+	    margin: 0 auto;
+	    height: 100px;
+	    padding: 22px;
+
+	    @include m('white'){
+	    	border: 1px solid $white;
+	    }
+  	}
+
+  	@include e('smalltitle'){
+		margin: 20px 0 10px;
+		
+		span{
+			color: $blue2;
+		}
+		a{
+			@include fonts(700,16);
+			color: $blue2;
+			text-transform: normal;
+			@include respond-to(md){
+				@include fonts(700,20);
+			}
+		}
+	}
+
+	@include e('smallcontent'){
+		@include fonts(300,15);
+		margin: 0;
+		
+		@include respond-to(md){
+			text-transform: normal;
+
+		}
+	}
+}

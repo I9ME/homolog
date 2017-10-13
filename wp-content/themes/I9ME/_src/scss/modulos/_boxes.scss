@@ -1,0 +1,122 @@
+.boxes{
+	@extend %boxFull;
+	display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    @include m('reverse'){
+    	flex-direction: row-reverse;
+    }
+
+    @include e('box-left'){
+    	@extend %boxFull;
+  		@include span(1);
+
+  		@include respond-to(sm){
+  			@include span(.5);
+  		}
+    }
+
+    @include e('box-right'){
+    	@extend %boxFull;
+  		@include span(1);
+  			
+		@include respond-to(sm){
+			@include span(.5);
+		}
+    }
+}
+
+// @include e('lapisparallax'){
+// 			 	@include span(1);
+// 			 	z-index: 0;
+// 			    background-position: bottom;
+// 			    position: relative;
+// 			    background: url(../images/lapis.png) no-repeat bottom;
+// 			    min-height: 271px;
+// 			    // position: absolute;
+// 			    // bottom: 0;
+// 			    // left: 0;
+
+// 			    &:before{
+// 			    	content: '';
+// 			    	position: absolute;
+// 			    	background: url(../images/sombra.png) no-repeat;
+// 				 	background-position: center;
+				   
+
+// 				    @include respond-to(sm){
+// 				    	left: 230px;
+//     					top: 33px;
+//     					height: 269px;
+// 				    	width: 200px;
+// 				    	background-position: center;
+// 				    }
+// 				    @include respond-to(md){
+// 				    	background-position: center;
+// 				    	left: 150px;
+// 				    	top: 22px;				   
+// 				    }
+// 			    }
+			    			
+    		
+//    			@include respond-to(sm){
+// 			   background: url(../images/lapis.png) no-repeat right;
+// 			    background-position: 40%;
+			   
+//    			}
+//    			@include respond-to(md){
+// 			   background: url(../images/lapis.png) no-repeat center;
+// 			    background-position: center;
+//    			}
+//    		}
+
+// @include e('box-paralax'){
+// 			width: 100%;
+// 			position: absolute;
+//     		height: 100%;
+			
+// 			display: flex;
+
+// 			@include respond-to(sm){
+// 				bottom: -738px;
+// 				position: relative;
+			
+// 			}
+// 			@include respond-to(md){
+// 				bottom: -273px;
+// 				position: relative;
+			
+// 			}
+
+
+// 			@include m('phone'){
+				
+// 				bottom: 0;
+// 				left: 0;
+// 				height: 442px;
+// 		    	position: absolute;
+// 			   	background: url(../images/smartPhone_bg.png)no-repeat;
+			    
+// 			    background-size: contain;
+// 			 	background-position-x: center;
+// 			 	background-position-y: 157px;	
+
+// 			 	@include respond-to(sm){
+// 			 		background-position-y: 120px;
+// 			 	}
+// 			 	@include respond-to(md){
+// 			 		background-position-y: 150px;
+// 			 	}
+// 			 	@include respond-to(lg){
+// 			 		background-position-y: 120px;
+// 			 	}
+// 			}
+// 		}
+
+// @include e('img'){
+//   		@include span(1);
+//   		background: url(../images/pc.png);
+//   		width: 100%;
+//   		background-size: cover;
+//   	}

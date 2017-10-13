@@ -1,0 +1,32 @@
+.page-sobre{
+	$self : &;
+  @extend %boxFull;
+}
+
+
+.dna{
+	$self : &;
+	@extend %boxFull;
+	position: relative;
+  min-height: 760px;
+
+}
+.resultados{
+  $self : &;
+  @extend %boxFull;
+  background: #eaeaea;
+  position: relative;
+  min-height: 760px;
+
+}
+
+.clientes{
+   $self : &;
+  @extend %boxFull;
+  background: #005193;
+
+  @include e('carousel'){
+    @extend %boxFull;
+    
+  }
+}
