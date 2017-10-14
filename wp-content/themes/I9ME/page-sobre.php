@@ -256,23 +256,9 @@
 				</div>
 			</header>
 			
-				<ul class="clientes__carousel" id="clientes">
-					<li>
-						<h2>Globo</h2>
-					</li>
-					<li>
-						<h2>HP</h2>
-					</li>
-					<li>
-						<h2>Levis</h2>
-					</li>
-					<li>
-						<h2>Levis</h2>
-					</li>
-					<li>
-						<h2>Levis</h2>
-					</li>
-				</ul>
+				<div class="clientes__carousel" id="clientes">
+					<?php get_template_part('templates/clientes','loop');?>
+				</div>
 			
 			
 		</div>

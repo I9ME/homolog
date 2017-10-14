@@ -12,9 +12,9 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 
 <section class="servicos__design" id="design">
 	<div class="container">
-		<div class="boxes">
+		<div class="boxes boxes--paralax">
 
-			<div class="boxes__box-left">
+			<div class="boxes__box-left boxes__box-left--paralax"  id="group4">
 				<header class="header-section header-section--area-design">
 					<div class="header-section__box header-section__box--design">
 						<h2 class="header-section__title header-section__title--design">
@@ -39,10 +39,17 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 					 ?>
 					</p>
 				</header>
-
-				<div class="paralax">
-					<div class="lapisparallax"></div>
-				</div>
+				
+				    
+				<div class="boxes__layer boxes__layer--base">
+		        	<div class="boxes__bg-lapis"></div>
+		      	</div>
+		      	<div class="boxes__layer boxes__layer--back">
+		        	<div class="boxes__lapis"></div>
+		      	</div>
+		      	<div class="boxes__layer boxes__layer--deep">
+		        	<div class="boxes__sombra"></div>
+		      	</div>
 			</div>
 
 			<div class="boxes__box-right">
@@ -97,8 +104,8 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 
 	<section class="servicos__web" id="web">
 		<div class="container">
-			<div class="boxes boxes--reverse">
-				<div class="boxes__box-left">
+			<div class="boxes boxes--reverse boxes--paralax">
+				<div class="boxes__box-left  boxes__box-left--paralax"  id="group5">
 					<header class="header-section header-section--area-design header-section--area-web">
 						<p class="header-section__subtitle header-section__subtitle--right header-section__subtitle--txtright">
 						<?php 
@@ -121,9 +128,12 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 
 					</header>
 
-					<div class="paralax">
-						<div class="phoneparallax"></div>
-					</div>
+					<div class="boxes__layer boxes__layer--deep-right">
+		        		<div class="boxes__bg-phone"></div>
+		      		</div>
+			      	<div class="boxes__layer boxes__layer--back-right">
+			        	<div class="boxes__phone"></div>
+			      	</div>
 
 					
 				</div>

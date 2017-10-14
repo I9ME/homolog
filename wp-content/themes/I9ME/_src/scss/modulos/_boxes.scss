@@ -1,30 +1,199 @@
 .boxes{
 	@extend %boxFull;
 	display: flex;
-    justify-content: center;
-    flex-direction: row;
+  justify-content: center;
+    @include respond-to(sm){
+      flex-direction: column;
+    }
+     @include respond-to(md){
+      flex-direction: row;
+    }
+
+
+
 
     @include m('reverse'){
     	flex-direction: row-reverse;
+
+        @include respond-to(sm){
+          flex-direction: column;
+        }
+        @include respond-to(md){
+          flex-direction: row-reverse;
+        }
     }
+
+    @include m('paralax'){
+      //height: 500px; /* fallback for older browsers */
+      //height: 100vh;
+      // overflow-x: hidden;
+      // overflow-y: auto;
+       -webkit-perspective: 300px;
+       perspective: 300px;
+    }
+
+
+
+
 
     @include e('box-left'){
     	@extend %boxFull;
   		@include span(1);
 
-  		@include respond-to(sm){
-  			@include span(.5);
-  		}
+      @include respond-to(sm){
+        @include span(1);
+        margin-bottom: 60px;
+      }
+      @include respond-to(md){
+        @include span(.5);
+      }
+
+
+
+
+
+
+
+
+      @include m('paralax'){
+        position: relative;
+        //height: 500px; /* fallback for older browsers */
+        //height: 100vh;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+
+  		
+
     }
 
     @include e('box-right'){
     	@extend %boxFull;
   		@include span(1);
   			
-		@include respond-to(sm){
-			@include span(.5);
-		}
+  		@include respond-to(sm){
+  			@include span(1);
+  		}
+      @include respond-to(md){
+        @include span(.5);
+      }
     }
+
+
+    @include e('layer'){
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 130px;
+
+      @include m('base'){
+        z-index: 4;
+        width: 533px;
+
+        @include respond-to(sm){
+          transform: translateZ(-340px) scale(2)translateX(224px)translateY(319px);
+
+        }
+        @include respond-to(md){
+          transform: translateZ(0)translateY(390px)translateX(60px);
+        }
+      }
+      @include m('back'){
+        width: 312px;
+        z-index: 3;
+        
+        @include respond-to(sm){
+          transform: translateZ(-340px) scale(2)translateX(100px)translateY(525px);
+
+        }
+        @include respond-to(md){
+          transform: translateZ(-340px) scale(2)translateX(-16px)translateY(399px);
+
+        }
+      }
+      @include m('back-right'){
+        width: 312px;
+        z-index: 3;
+        
+        @include respond-to(sm){
+          transform: translateZ(-600px) scale(3)translateX(34px)translateY(262px);
+          opacity: 0.2;
+        }
+        @include respond-to(md){
+          transform: translateZ(-340px) scale(2)translateX(168px)translateY(232px);
+          opacity: 1;
+        }
+      }
+      @include m('deep'){
+        z-index: 2;
+        width: 220px;
+        
+        @include respond-to(sm){
+          transform: translateZ(-340px) scale(2)translateX(71px)translateY(529px);
+
+        }
+        @include respond-to(md){
+          transform: translateZ(-600px) scale(3)translateX(-68px)translateY(314px);
+        }
+       
+      }
+      @include m('deep-right'){
+        z-index: 2;
+        width: 535px;
+        
+        @include respond-to(sm){
+          transform: translateZ(-600px) scale(3)translateX(34px)translateY(351px);
+          opacity: 0.2;
+        }
+        @include respond-to(md){
+          transform: translateZ(-600px) scale(3)translateX(164px)translateY(218px);
+          opacity: 1;
+        }
+       
+      }
+
+
+
+    }
+
+  #group4,#group5 {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+
+  @include e('bg-lapis'){
+  background: url(../images/bg_lapis.png)no-repeat;
+    width: 100%;
+    float: left;
+    height: 180px;
+  }
+  @include e('lapis'){
+    background: url(../images/lapis.png)no-repeat;
+    width: 100%;
+    float: left;
+    height: 270px;
+  }
+  @include e('sombra'){
+    background: url(../images/sombra.png)no-repeat;
+    width: 100%;
+    float: left;
+    height: 271px;
+  }
+  @include e('bg-phone'){
+    background: url(../images/smartPhone_bg.png)no-repeat;
+    width: 100%;
+    float: left;
+    height: 412px;
+
+  }
+  @include e('phone'){
+    background: url(../images/smartPhone.png)no-repeat;
+    width: 100%;
+    float: left;
+    height: 412px;
+  }
+
 }
 
 // @include e('lapisparallax'){

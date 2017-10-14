@@ -24,13 +24,13 @@
  	@include m('area-web'){
  		display: flex;
     	align-items: flex-start;
-    	top: -715px;
+    	//top: -715px;
     	background: none;
     	@include respond-to(sm){
-    		top: -700px;
+    		//top: -700px;
     	}
     	@include respond-to(md){
-    		top: 0px;
+    		//top: 0px;
     	}
 
  	}

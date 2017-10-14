@@ -36,12 +36,13 @@
 		//@include span(1);
 		position: relative;
 		@extend %boxFull;
+		background: #fefdfd;
 		//display: inline-block;
 		//height: 670px;
-		background-image: url(../images/bg_lapis.png);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: 34% 46%;
+		// background-image: url(../images/bg_lapis.png);
+		// background-repeat: no-repeat;
+		// background-attachment: fixed;
+		// background-position: 34% 46%;
 		//min-height: 899px;
 		//background-position: 10% 27%;
 			
@@ -71,8 +72,8 @@
 		background-color: $gray1;
 		
     	@include respond-to(sm){
-    		padding-bottom: 60px;
-    		min-height: 760px;
+    		//padding-bottom: 60px;
+    		//min-height: 760px;
     	}
 
 	}
@@ -180,3 +181,73 @@
 
 
 }
+
+  .parallax {
+   // height: 536px; /* fallback for older browsers */
+    //height: 100vh;
+    //position: relative;
+    //bottom: -20px;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    // -webkit-perspective: 300px;
+    // perspective: 300px;
+    // width: 100%;
+    // float: left;
+  }
+
+  .parallax__group {
+   
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transform: translateY(300px);
+    z-index: 4;
+    
+  	background: url(../images/lapis.png) no-repeat;
+	background-position: bottom center;
+    
+	
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+     transform: translateY(340px)translateX(-27px);
+     background: url(../images/sombra.png) no-repeat;
+     background-position: bottom;
+
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  
+    background: url(../images/bg_lapis.png) no-repeat;
+    background-position: bottom;
+     //background-image: url(../images/bg_lapis.png);
+// background-position: center;
+  }
+
+   /* style the groups
+  --------------------------------------------- */
+
+  #group4 {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+  #group4 .parallax__layer--deep {
+    //background: rgb(184,223,101);
+
+  }
