@@ -38,16 +38,16 @@
 
 	<section class="dna">
 		<div class="container">
-			<div class="boxes">
-				<div class="boxes__box-left">
+			<div class="boxes boxes--paralax">
+				<div class="boxes__box-left boxes__box-left--paralax"  id="group7">
 					
 					<header class="header-section header-section--area-design">
 						<div class="header-section__box header-section__box--design header-section__box--dna">
 							<h2 class="header-section__title header-section__title--design">
-								<div class="header-section__group">
+								<div class="header-section__group header-section__group--dna">
 									<span class="icon-dna"></span>
 								</div>
-								<div class="header-section__group">
+								<div class="header-section__group header-section__group--dna">
 									<span class="header-section__letter">D</span>
 									<span class="header-section__letter">n</span>
 									<span class="header-section__letter">a</span>
@@ -59,7 +59,11 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.</p>
 					</header>
 
-					<div class="box-left__img"></div>
+					
+			      	<div class="boxes__layer boxes__layer--back boxes__layer--back-pc">
+			        	<div class="boxes__pc"></div>
+			      	</div>
+			      	
 				</div>
 
 				<div class="boxes__box-right">
@@ -138,40 +142,49 @@
 
 	<section class="resultados">
 		<div class="container">
-			<div class="boxes boxes--reverse">
-				<div class="boxes__box-left">
+			<div class="boxes boxes--reverse  boxes--paralax">
+				<div class="boxes__box-left boxes__box-left--paralax" id="group6">
 					<header class="header-section header-section--area-design header-section--area-web">
 						<p class="header-section__subtitle header-section__subtitle--right header-section__subtitle--txtright">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.
 						</p>
 						<div class="header-section__box header-section__box--design">
-							<h2 class="header-section__title header-section__title--web">
-								<div class="header-section__group header-section__group--we">
+							<h2 class="header-section__title header-section__title--resultados">
+								<div class="header-section__group header-section__group--resultado">
+									<span class="icon-resultados"></span>
+								</div>
+								<div class="header-section__group header-section__group--resultado header-section__group--re">
 									<span class="header-section__letter">R</span>
 									<span class="header-section__letter">e</span>
 								</div>
-								<div class="header-section__group">
+								<div class="header-section__group header-section__group--resultado">
 									<span class="header-section__letter">s</span>
 									<span class="header-section__letter">u</span>
-									<span class="header-section__letter">l</span>
 								</div>
-								<div class="header-section__group">
+								<div class="header-section__group header-section__group--resultado">
+									<span class="header-section__letter header-section__letter--l">l</span>
 									<span class="header-section__letter">t</span>
-									<span class="header-section__letter">a</span>
 								</div>
-								<div class="header-section__group">
+								<div class="header-section__group header-section__group--resultado">
+									<span class="header-section__letter">a</span>
 									<span class="header-section__letter">d</span>
+									
+								</div>
+								<div class="header-section__group header-section__group--resultado">
 									<span class="header-section__letter">o</span>
 									<span class="header-section__letter">s</span>
-									
 								</div>
 			        		</h2>
 						</div>
 
 					</header>
 					
-
-					<div class="box-left__img"></div>
+					
+			      	<div class="boxes__layer boxes__layer--back-resultado">
+			        	<div class="boxes__resultado"></div>
+			      	</div>
+			      	
+					
 				</div>
 
 				<div class="boxes__box-right">
@@ -250,7 +263,7 @@
 
 	<section class="clientes">
 		<div class="container">		
-			<header class="header-section">
+			<header class="header-section header-section--area-clientes">
 				<div class="header-section__box header-section__box--before-blue">
 					<h2 class="header-section__title header-section__title--before-blue">Clientes</h2>
 				</div>

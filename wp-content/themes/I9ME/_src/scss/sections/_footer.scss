@@ -1,7 +1,7 @@
  .footer {
      @extend %boxFull;
          position: relative;
-         z-index: 999999999999;
+         z-index: 999999999;
 
 
      @include e('layertop'){

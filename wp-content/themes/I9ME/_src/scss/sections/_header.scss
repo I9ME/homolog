@@ -304,7 +304,7 @@
 .scrollOn{
   background: $white;
   color: $blue2;
-  z-index: 999999999999999999999;
+  z-index: 999999999999999;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
   height: 86px;
   transition: all 0.5s;
@@ -372,8 +372,17 @@
     }
   }
   .on + .header__menu{ 
-         display:block; opacity: 1; position: absolute$i; top: 357px$i; left: 340px$i; visibility:visible; background: hsl(0, 0%, 100%);  width:100%; height:auto; z-index: 1;  
-       }
+     display:block; 
+     opacity: 1; 
+     position: absolute$i; 
+     top: 85px$i; 
+     left: 0px$i; 
+     visibility:visible; 
+     background: hsl(0, 0%, 100%);  
+     width:100%; 
+     //height:auto; 
+     z-index: 999;  
+  }
 
  }
  .scrollOff{

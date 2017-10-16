@@ -25,7 +25,7 @@
 		    background: url(../images/after2.png) no-repeat center;
 		    display: block;
 		    margin: 0 auto;
-		    z-index: 99999999999999999;
+		    z-index: 999999999;
 		    width: 100%;
 		    max-width: 100%;
 		}
@@ -47,7 +47,7 @@
 		//background-position: 10% 27%;
 			
 		@include respond-to(sm){
-			min-height: 760px;
+			min-height: 726px;
 		}
 
 		&:after{
@@ -74,6 +74,7 @@
     	@include respond-to(sm){
     		//padding-bottom: 60px;
     		//min-height: 760px;
+    		min-height: 726px;
     	}
 
 	}

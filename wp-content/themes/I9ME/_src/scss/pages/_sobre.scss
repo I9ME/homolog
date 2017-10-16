@@ -16,7 +16,8 @@
   @extend %boxFull;
   background: #eaeaea;
   position: relative;
-  min-height: 760px;
+  min-height: 867px;
+  z-index: -1;
 
 }
 
@@ -27,6 +28,29 @@
 
   @include e('carousel'){
     @extend %boxFull;
+
+      @include respond-to(sm){
+        margin-bottom: 60px;
+      }
     
+
+    .owl-controls{
+      margin-bottom: 60px;
+      
+      @include respond-to(sm){
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include e('item'){
+    min-height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond-to(sm){
+      min-height: 250px;
+    }
   }
 }

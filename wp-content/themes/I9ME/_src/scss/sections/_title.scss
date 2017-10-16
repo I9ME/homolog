@@ -34,6 +34,13 @@
     	}
 
  	}
+ 	@include m('area-clientes'){
+ 		 min-height: 65px;
+
+ 	    @include respond-to(sm){
+ 	    	min-height: 120px;
+ 	    }
+ 	}
     // @include m('area-design-interna'){
     // 	top: -551px;
     // 	@include respond-to(sm){
@@ -247,6 +254,20 @@
 			 		@include afterWhiteRight($brColorWhite: $white);
 			 	}
 			}
+			@include m('resultados'){
+			 	top: 0;
+			 	color: $blue2;
+				
+				&:before,&:after{
+			 		display: none;
+			 		height: 365px$i;
+			 	}
+
+				@include respond-to(sm){
+			 		@include beforeGrayRight($brColorGray: $gray1);
+			 		@include afterWhiteRight($brColorWhite: $white);
+			 	}
+			}
 	}
 	@include e('group'){
 		line-height: 38px;
@@ -274,7 +295,53 @@
 				text-align: inherit;
 			}
 		}
+		@include m('re'){
+			//margin-top: 0px;
+			//text-align: right;
+			//margin-left: 17%;
 
+			@include respond-to(sm){
+				//margin-top: 60px;
+				//text-align: left;
+			}
+		}
+		@include m('dna'){
+			text-align: left;
+		}
+		@include m('resultado'){
+			//margin-top: 0px;
+			text-align: right;
+			//margin-left: 17%;
+
+			@include respond-to(sm){
+				//margin-top: 60px;
+				//text-align: left;
+			}
+		}
+		// @include m('ta'){
+		// 	text-align: right;
+		// 	margin-left: 17%;
+
+		// 	@include respond-to(sm){
+		// 		text-align: left;
+		// 	}
+		// }
+		// @include m('sul'){
+		// 	text-align: right;
+		// 	margin-left: 17%;
+
+		// 	@include respond-to(sm){
+		// 		text-align: left;
+		// 	}
+		// }
+		// @include m('dos'){
+		// 	text-align: right;
+		// 	margin-left: 17%;
+
+		// 	@include respond-to(sm){
+		// 		text-align: left;
+		// 	}
+		// }
 		@include m('center'){
 			margin-top: 0px;
 			text-align: center;
@@ -291,6 +358,9 @@
 
 		@include m('i'){
 			margin: 0 6px;
+		}
+		@include m('l'){
+			margin-right: 7px;
 		}
 	}
 
@@ -367,4 +437,11 @@
     height: 71px;
     display: inline-block;
     margin-top: 90px;
+}
+.icon-resultados{
+	background: url(../images/resultados.png);
+	width: 65px;
+    height: 55px;
+    display: inline-block;
+    margin-top: 60px;
 }
