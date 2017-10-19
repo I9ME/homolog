@@ -41,6 +41,20 @@
  	    	min-height: 120px;
  	    }
  	}
+ 	@include m('area-atendimento'){
+ 		
+    	//top: -715px;
+    	display: none;
+    	@include respond-to(sm){
+    		display: flex;
+    		align-items: flex-start;
+    		background: none;
+    	}
+    	@include respond-to(md){
+    		//top: 0px;
+    	}
+
+ 	}
     // @include m('area-design-interna'){
     // 	top: -551px;
     // 	@include respond-to(sm){
@@ -150,6 +164,16 @@
 	    		align-items: left;
 	    		padding-right: 21%;
     		}
+	    }
+
+	     @include m('atendimento'){
+	    	@include span(.75);
+	    	    min-height: 181px;
+
+	    	@include respond-to(sm){
+	    	    min-height: 211px;
+	    	    justify-content: flex-end;
+	    	}
 	    }
  	}
 
@@ -266,6 +290,29 @@
 				@include respond-to(sm){
 			 		@include beforeGrayRight($brColorGray: $gray1);
 			 		@include afterWhiteRight($brColorWhite: $white);
+			 	}
+			}
+			@include m('atendimento'){
+			 	top: 0;
+			 	color: $blue2;
+			 	max-width: 200px;
+			 	&:before,&:after{
+			 		display: none;
+			 		right: -29px;
+			 		
+			 	}
+			 	margin-right: 30px;
+			 	@include respond-to(sm){
+			 		@include beforeWhiteRightAtendimento($brColorWhite: $white);
+			 		@include afterBlueRightAtendimento($brColorBlue: $blue2);
+
+			 		span{
+			 			display: inline-block;
+					    line-height: 38px;
+						margin-top: 15px;
+					    text-align: right;
+					    color: #007cdb;
+			 		}
 			 	}
 			}
 	}
@@ -394,6 +441,25 @@
     			padding-left: 30px;
     			text-align: left;
     			font-size: 16px;
+ 			}
+    	}
+    	@include m('atendimento'){
+    		position: initial;
+    		text-align: left;
+    		padding-left: 0px;
+	    	margin: 0;
+	    	display: flex;
+	   	 	align-items: flex-end;
+    		height: 180px;
+	    	font-size: 13px;
+	    	width: 100%;
+			@include respond-to(sm){
+    			@include span(.25);
+	    		background: hsla(0, 100%, 100%, 0.13);
+    			height: 244px;
+    			padding-left: 23px;
+    			text-align: left;
+    			font-size: 13px;
  			}
     	}
     	@include m('textwhite'){

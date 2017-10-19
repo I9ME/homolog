@@ -171,7 +171,21 @@ $childargs = array(
 
 	<?php } elseif ( $tipo == 'bar' ) { ?>
 
-<section class="criacao__paralax <?php echo $class_section; ?>">
+	<?php 
+		if ( has_post_thumbnail() ) {
+				//Imagem Destacada	
+				$image_id = get_post_thumbnail_id();
+				$sizeThumbs = 'medium';
+				$urlThumbnail = wp_get_attachment_image_src($image_id, $sizeThumbs);
+				$urlThumbnail = $urlThumbnail[0];
+				} else {
+					$urlThumbnail	= '';
+				}
+
+
+	 ?>
+
+<section style="background: url('<?php echo $urlThumbnail; ?>'); background-size: cover;" class="criacao__paralax <?php echo $class_section; ?>">
 
 	<p><?php echo get_the_content(); ?></p>
 

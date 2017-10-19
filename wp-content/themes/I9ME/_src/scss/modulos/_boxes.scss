@@ -95,7 +95,7 @@
 
       @include m('base'){
         z-index: 4;
-        width: 533px;
+        width: 463px;
 
         @include respond-to(sm){
           transform: translateZ(-340px) scale(2)translateX(224px)translateY(319px);

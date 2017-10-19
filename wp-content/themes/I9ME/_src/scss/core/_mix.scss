@@ -263,6 +263,23 @@ $break-large: 1400px;
    }
 }
 //mixin para before branco direito do titulo.
+@mixin beforeWhiteRightAtendimento( $Width: 100%, $brColorWhite: $white){
+
+ &:before {
+    border-width: 0 5px 0 0;
+    border-style: solid;
+    border-color: $white;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -25px;
+    width: $Width;
+    height: 25px;
+   
+
+   }
+}
+//mixin para before branco direito do titulo.
 @mixin beforeGrayRight( $Width: 100%, $brColorGray: $gray1){
 
  &:before {
@@ -302,6 +319,23 @@ $break-large: 1400px;
 
   &:after {
      border-color: $blue2;
+     border-style: solid;
+     border-width: 0 5px 0 0;
+     height: 245px;
+     width: 100%;
+     display: block;
+     top: 0;
+     content: "";
+     position: absolute;
+    
+  }
+
+}
+//mixin para after azul direito do titulo.
+@mixin afterBlueRightAtendimento( $Width: 100%, $brColorBlue:  #007cdb){
+
+  &:after {
+     border-color:  #007cdb;
      border-style: solid;
      border-width: 0 5px 0 0;
      height: 245px;

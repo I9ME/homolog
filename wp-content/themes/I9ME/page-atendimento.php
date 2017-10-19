@@ -61,22 +61,23 @@
 	<section class="localizacao">
 		<!-- <div class="container"></div> -->
 		<div class="localizacao__bloco-form">
-				<header class="header-section header-section--area-design">
-					<div class="header-section__box header-section__box--design">
-						<h2 class="header-section__title header-section__title--design">
-							Onde <br/>estamos
-		        		</h2>
-					</div>
+			<header class="header-section header-section--area-atendimento">
+				<div class="header-section__box header-section__box--atendimento">
+					<h2 class="header-section__title header-section__title--atendimento">
+						<i class="icon-local"></i>
+						<span>Onde estamos</span>
+	        		</h2>
+				</div>
 
-					<p class="header-section__subtitle header-section__subtitle--right">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.</p>
-				</header>
+				<p class="header-section__subtitle header-section__subtitle--atendimento">
+				Rua leda Pereira, Nº 534, Sala 05-A. Fortaleza/CE - CEP: 60821-572</p>
+			</header>
 				
-				<?php echo do_shortcode('[contact-form-7 id="325" title="Page Atendimento"]'); ?>
-			</div>
-			<div class="localizacao__bloco-maps">
-				<iframe class="localizacao__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.09995194693!2d-38.490588385620505!3d-3.7884171445405173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f616e77fe93%3A0x2fa56ee94a69b0ea!2sI9ME+Web+%26+Design!5e0!3m2!1spt-BR!2sbr!4v1508249512584" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+			<?php echo do_shortcode('[contact-form-7 id="325" title="Page Atendimento"]'); ?>
+		</div>
+		<div class="localizacao__bloco-maps">
+			<iframe class="localizacao__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.09995194693!2d-38.490588385620505!3d-3.7884171445405173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f616e77fe93%3A0x2fa56ee94a69b0ea!2sI9ME+Web+%26+Design!5e0!3m2!1spt-BR!2sbr!4v1508249512584" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 	</section>
 
 	<section class="horarios">

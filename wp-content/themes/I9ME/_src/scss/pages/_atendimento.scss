@@ -41,16 +41,19 @@
 		span{
 			@include fonts(300,18);
 			display: inline-block;
+			letter-spacing: 2px;
 		}
 		h4{
 			@include fonts(600,24);
 			display: inline-block;
 			margin: 0;
+			letter-spacing: 2px;
 		}
 		h5{
 			@include fonts(200,21);
 			display: inline-block;
 			margin: 0;
+			letter-spacing: 2px;
 		}
 	}
 }
@@ -59,27 +62,57 @@
 	$self : &;
 	@extend %boxFull;
 	position: relative;
-
-
+	margin-top: 30px;
+	
+	@include respond-to(sm){
+		margin: 0;
+	}
 	@include e('bloco-form'){
-		@include span(1);
 
 		@include respond-to(sm){
+			@include span(1);
+		}
+		@include respond-to(md){
 			@include span(.7);
 		}
 	}
 	@include e('fale-conosco'){
 		@include span(1);
+		padding: 0 25px;
+		@include respond-to(md){
+			@include span(.8);
+			float: right;
+		}
+		h2{
+			color: #007cdb;
+			margin: 0;
+			margin-bottom: 15px;
+		}
+		p{
+			margin: 0;
+			font-size: 15px;
+
+			@include respond-to(sm){
+				font-size: 17px;
+			}
+		}
 	}	
 	@include e('form'){
-		@include span(.8);
+		@include span(1);
 		//background: #aaa;
-		float: right;
 		padding: 0 23px;
+		margin-top: 15px;
+
+		@include respond-to(md){
+			@include span(.8);
+			float: right;
+
+		}
+		
 	}
 	@include e('input'){
-		@include col(1/2, $cycle: 2);
-		width: 49.8%;
+		@include span(1);
+		height: 70px;
 		margin-right: 0$i;
 		label{
 			position: relative;
@@ -90,42 +123,73 @@
 		input{
 			width: 100%;
 			padding: 25px 14px 13px;
+			border: 1px solid #007cdb;
 		}
 
+		@include respond-to(sm){
+			@include col(1/2, $cycle: 2);
+			width: 49.8%;
+		}
 
 		@include m('msg'){
-			@include span(.84);
-			margin-right: 1%$i;
+			@include span(1);
+			height: 179px;
 			textarea{
 				width: 100%;
 				height: 150px;
 				padding: 25px 14px 13px;
+				border: 1px solid #007cdb;
+			}
+
+			@include respond-to(sm){
+				@include span(.84);
+				margin-right: 1%$i;
+				height: inherit;
 			}
 		}
 	}
 	@include e('btn'){
-		@include span(.15);
-		margin: 23px 0 0;
-
+		@include span(1);
 		input[type="submit"]{
-			height: 150px;
+			height: 60px;
+			max-width: 100%;
 			border-radius: 0;
 			border: 0;
 			background: $blue2;
 			color: $white;
+
+			@include respond-to(sm){
+				height: 150px;
+			}
+		}
+		@include respond-to(sm){
+			@include span(.15);
+			margin: 23px 0 0;
+
 		}
 	}
 
 	@include e('bloco-maps'){
-		@include span(1);
 
 		@include respond-to(sm){
+			@include span(1);
+			margin-top: 30px;
+		}
+		@include respond-to(md){
 			@include span(.3);
+			margin-top: 0;
 		}
 	}	
 	@include e('iframe'){
 		@include span(1);
-		height: 700px;
+		height: 295px;
+
+		@include respond-to(sm){
+			height: 403px;
+		}
+		@include respond-to(md){
+			height: 803px;
+		}
 	}
 }
 
@@ -172,6 +236,25 @@
 	float: left;
 	margin-right: 3%;
 	margin-top: 4px;
+	background-size: 100%;
+}
+.icon-msg{
+	background: url(../images/icon-msg.png)no-repeat;
+	width: 50px;
+    height: 38px;
+	display: inline-block;
+	float: left;
+	margin-right: 3%;
+	margin-top: 6px;
+	background-size: 100%;
+}
+.icon-local{
+	background: url(../images/icon-local.png)no-repeat;
+	width: 50px;
+    height: 63px;
+    margin-top: 98px;
+	display: inline-block;
+	float: right;
 	background-size: 100%;
 }
 .contato-imagem{
