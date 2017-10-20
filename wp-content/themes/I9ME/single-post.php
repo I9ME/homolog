@@ -13,8 +13,6 @@
 			}
 	?>
 
-
-<article class="page-servico">
 	<div class="banner-single" <?php echo $bg_banner_single; ?>>
 		<header class="banner-single__header">
 			<h4>BLOG</h4>
@@ -40,6 +38,7 @@
 			?>
 		</header>
 	</div>
+<article class="page-blog-post">
 	<section class="criacao">
 		<div class="container">
 			<main>

@@ -36,6 +36,11 @@
 			</header>
 		</div>
 	</div>
+	<div class="breadcrumb">
+		<div class="container">
+			<?php get_template_part('breadcrumb');?>
+		</div>
+	</div>
 <article class="page-portfolio">
 	<?php 
 		$post_id = get_the_ID();

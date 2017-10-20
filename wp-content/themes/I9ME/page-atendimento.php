@@ -31,7 +31,11 @@
 			<p class="banner-single__subtitle"><?php echo $resumoPage; ?></p>
 		</header>
 	</div>
-
+	<div class="breadcrumb">
+		<div class="container">
+			<?php get_template_part('breadcrumb');?>
+		</div>
+	</div>
 	<section class="contatos">
 		<div class="container">
 			<div class="contatos__img">

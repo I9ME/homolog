@@ -1,0 +1,5 @@
+.page-blog-post{
+	$self : &;
+	@extend %boxFull;
+	position: relative;
+}

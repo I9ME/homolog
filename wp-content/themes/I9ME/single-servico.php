@@ -26,7 +26,11 @@
 			<p class="banner-single__subtitle"><?php echo $resumoPost; ?></p>
 		</header>
 	</div>
-
+	<div class="breadcrumb">
+		<div class="container">
+			<?php get_template_part('breadcrumb');?>
+		</div>
+	</div>
 	<section class="criacao">
 		<div class="criacao__lista-servicos">
 			<ul class="criacao__lista">

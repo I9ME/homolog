@@ -28,6 +28,11 @@
 			</header>
 		</div>
 	</div>
+	<div class="breadcrumb">
+		<div class="container">
+			<?php get_template_part('breadcrumb');?>
+		</div>
+	</div>
 	<div class="container">
 		<div class="containerowl groupboxes portifolio-interna">
 	    	<?php get_template_part('templates/portfolio','loop');?>
