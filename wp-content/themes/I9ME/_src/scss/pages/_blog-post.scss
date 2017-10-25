@@ -2,4 +2,39 @@
 	$self : &;
 	@extend %boxFull;
 	position: relative;
+	margin-top: 90px;
+}
+.comments-block{
+	width: 100%;
+}
+.category-tfoot{
+	width: 50%;
+	padding: 0$i;
+	li{
+		border: 0;
+		margin-bottom: 0;
+	}
+}
+.tags{
+	@extend %boxFull;
+	padding: 0$i;
+}
+.comments-post{
+	padding: 0$i;
+}
+.comment-respond{
+	input{
+		width: 100%;
+	}
+}
+.comment-form-comment{
+	textarea{
+		width: 100%;
+	}
+}
+.form-submit input{
+	background: $blue2;
+	color: $white;
+	border: 0;
+	padding: 10px;
 }

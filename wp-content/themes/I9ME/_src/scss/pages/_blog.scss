@@ -27,6 +27,15 @@
 			margin: 30px 0;
 		}
 	}
+	@include e('conteudo'){
+		img{
+			@include span(1);
+			object-fit: cover;
+			@include respond-to(sm){
+				object-fit: none;
+			}
+		}
+	}
 	@include e('news'){
 		@include span(1);
 		

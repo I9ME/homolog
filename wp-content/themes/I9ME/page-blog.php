@@ -27,17 +27,14 @@ if ( has_post_thumbnail() ) {
 			}
 
 ?>
-<article class="page-blog">
 	<div class="banner-single" <?php echo $bg_banner_single; ?>>
 		<header class="banner-single__header">
 			<h2 class="banner-single__title"><?php the_title() ?></h2>
 			<p class="banner-single__subtitle"><?php echo $resumoPage; ?></p>
 		</header>
 	</div>
-
 	<div class="criacao__lista-servicos">
 			<ul class="criacao__lista">
-
 				<?php 
 
 					$categories = get_categories( array(
@@ -62,7 +59,7 @@ if ( has_post_thumbnail() ) {
 				
 			</ul>
 		</div>
-
+<article class="page-blog">
 	<section class="blog">
 		<div class="container">
 			<header class="blog__header">
