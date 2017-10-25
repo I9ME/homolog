@@ -90,18 +90,7 @@
 
   }
 
-  @include e('scroll'){
-    bottom: 70px;
-    color: $white;
-    display: inline-block;
-    font-weight: normal;
-    left: 50%;
-    letter-spacing: .1em;
-    position: absolute;
-    text-decoration: none;
-    transition: opacity .3s;
-    z-index: 2;
-  }
+ 
 
   @include e('elemento'){
     animation: sdb07 2s infinite;
@@ -115,12 +104,74 @@
     position: absolute;
     top: 0;
   }
-    
-  
+  @include e('objeto-scroll'){
+      @include span(1);
+      transform: translateY(180px);
+      display: flex;
+      justify-content: center;
+
+      @include respond-to(sm){
+        transform: translateY(50px);
+      }
+      @include respond-to(md){
+        transform: translateY(110px);
+      }
+      @include respond-to(lg){
+        transform: translateY(550px);
+      }
+  }
+
+  .scroll-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 1.2em;
+    font-size: 22px;
+    color: rgba(#fff, .5);
+    border-radius: 2em;
+    border: solid 2px;
+    transition: .4s;
+}
+
+.scroll-icon:hover {
+  background-color: rgba(#fff, .05);
+  color: #fff;
+}
+
+.scroll-icon::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes scroll-icon {
+    0% { transform: translateY(-12px); opacity: 0; }
+   30%, 70% { opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
     
   
 
+ 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

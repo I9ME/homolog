@@ -9,15 +9,10 @@
  
           <h2 class="banner__title">Entre Criatividade e Resultado, escolha os dois.</h2>
           <p class="banner__subtitle">PARA RESULTADOS EFICAZES, DESENVOLVEMOS SOLUÇÕES CRIATIVAS..</p>
-            
-          <div class="banner__scroll">
-            <a href="#">
-              <span class="banner__elemento"></span>
-              <span class="banner__elemento"></span>
-              <span class="banner__elemento"></span>
-            </a>
+          <div class="banner__objeto-scroll">
+            <a href="#" class="scroll-icon"></a>
           </div>
-
+  
         </div>
       </div>
     </div>

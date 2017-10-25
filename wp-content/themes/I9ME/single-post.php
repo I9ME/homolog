@@ -14,7 +14,7 @@
 	?>
 	<div class="banner-single" <?php echo $bg_banner_single; ?>>
 		<header class="banner-single__header">
-			<h4>BLOG</h4>
+			<h4 class="title-blog">BLOG</h4>
 			<?php 	
 				if ( have_posts() ) : 	
 					while ( have_posts() ) : the_post();
@@ -24,7 +24,7 @@
 				<div class="data">
 					<span><?php the_date('d/m'); ?></span>
 				</div>
-				<div class="comentarios">
+				<div class="comments">
 					<span><?php comments_number( '0', '1', '%' ); ?></span>
 				</div>
 			</div>
@@ -47,15 +47,15 @@
 						?>   
 						<li class="">
 				    	<table cellspacing="0" cellpadding="0" width="100%" border="0">
-							<thead>
+							<!-- <thead>
 								<tr>
-									<td class="date"><?php the_date('d/m'); ?></td>
+									<td class="date"><?php //the_date('d/m'); ?></td>
 									<td class="titlePost ">
-										<h5 class="title"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h5>
+										<h5 class="title"><a href="<?php// echo get_permalink(); ?>"><?php// echo the_title(); ?></a></h5>
 									</td>
-									<td class="comments"><span><?php comments_number( '0', '1', '%' ); ?></span></td>
+									<td class="comments"><span><?php //comments_number( '0', '1', '%' ); ?></span></td>
 								</tr>
-							</thead>
+							</thead> -->
 							<tbody>
 								<tr>
 									<td colspan="3" class="blog__conteudo"><?php echo the_content(); ?></td>

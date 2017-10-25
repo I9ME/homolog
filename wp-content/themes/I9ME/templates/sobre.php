@@ -19,9 +19,11 @@
 	
 		
 		<div class="sobre__box-video">
-		
+				
 				<iframe class="sobre__play" src="https://www.youtube.com/embed/bpOSxM0rNPM" frameborder="0" allowfullscreen></iframe>
 				
+			
+				<a class="sobre__play" href="sobre__play"></a>
 				<!-- <a href="#" title="Assista ao Vídeo">
 					<div class="sobre__border"><i class="fa fa-play" aria-hidden="true"></i></div>
 				</a>
