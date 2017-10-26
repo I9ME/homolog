@@ -3,7 +3,7 @@
 	$resumoSection = get_post_custom_values('wpcf-resume', $page->ID);
 	$resumoSection = $resumoSection[0];
  ?>
-<section class="portfolio" id="portifolio">
+<section class="portfolio">
 	<div class="container">
 		<header class="header-section">
 			<div class="header-section__box">
@@ -13,7 +13,7 @@
 				<?php echo $resumoSection; ?>	 	
 			</p>
 		</header>
-		<div class="containerowl groupboxes" >
+		<div class="containerowl groupboxes">
 			<?php get_template_part('templates/portfolio','loop');?>
 		</div>
 		<div class="groupboxes__vermais">

@@ -5,22 +5,28 @@
 		background: #fff;
 		list-style: none;
 		@include respond-to(sm){
-		    margin-top: 30px;
+		    margin-top: 60px;
 			//margin: 0 0 60px;
 			//padding: 0 90px$i;
 		}
-
+	@include m('blog'){
+		li{
+			width: 100%;
+			@include respond-to(sm){
+				
+			}
+		}
+	}
 	 @include e('boxitem'){
 		@include span(1);
 			position: relative;
 			@include respond-to(sm){
-				display: inline-block;
-				width: 49.99%$i;
 			}
 
 		&:hover{
 			transition: all .6s;
 		}
+		
 	 }
 
 	 @include e('hover'){
@@ -117,13 +123,15 @@
 
 	@include e('vermais'){
 		@include span(1);
-			margin: 60px 0;
+			margin: 30px 0;
 			text-align: center;
 
 			// a{
 			// 	@extend %borderradius;
 			// }
-
+			@include respond-to(sm){
+				margin: 60px 0;
+			}
 			@include m('servicos'){
 				@include span(1);				
 					float: right$i;

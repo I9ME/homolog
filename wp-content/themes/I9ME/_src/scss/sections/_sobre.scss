@@ -143,13 +143,33 @@
 		@include e('play'){
 			background: url(../images/Play.png)no-repeat;
 			width: 100%;
-			height: 100%;
+			height: 190px;
 		    position: absolute;
 		    background-position: center;
-			@include respond-to(sm){
-				min-height: 424px;
+		    background-size: 20%;
+		    @include respond-to(sm){
+		    	height: 424px;
+		    	left: 0;
+    			
+		    }
+			@include respond-to(md){
+				height: 100%;
     			
 			}	
+		}
+		@include e('play-iframe'){
+		  
+		    	position: absolute;
+		    	left: 0;
+		    	height: 100%;
+		    	right: 0;
+		   
+		    @include respond-to(sm){
+	    		display: block;
+	    		opacity: 0.6;
+		    	width: 100%;
+			}
+		  
 		}
 
 

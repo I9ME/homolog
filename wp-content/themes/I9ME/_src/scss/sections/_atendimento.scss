@@ -7,7 +7,10 @@
    	    background-attachment: fixed;
 		position: relative;
 		min-height: 865px;
-	
+		margin-top: 30px;
+		@include respond-to(sm){
+		margin-top: 20px;
+		}
 
 		
 		@include e('boxform'){
@@ -16,7 +19,7 @@
 
 			@include respond-to(sm){
 				margin-top: 50px;
-				box-shadow:  0 0 12px 0 #000;
+				box-shadow:  0 0 1px 0 #000;
 			}
 		}
 

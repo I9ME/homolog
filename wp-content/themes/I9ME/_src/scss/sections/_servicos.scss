@@ -2,6 +2,7 @@
 	$self : &;
 	@extend %boxFull;
    	position: relative;
+   	margin-top: 40px;
    		//background: $blue2;
    		//margin-top: 90px;
    		// @include m('interna'){
@@ -70,9 +71,9 @@
 		@extend %boxFull;
 		position: relative;
 		background-color: $gray1;
-		
+		padding-bottom: 40px;
     	@include respond-to(sm){
-    		//padding-bottom: 60px;
+    		padding-bottom: 0px;
     		//min-height: 760px;
     		min-height: 726px;
     	}

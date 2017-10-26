@@ -30,7 +30,7 @@
 		$args = array( 'post_type' => 'portfolio', 'posts_per_page' => $limit_res, 'orderby' => 'date', 'order' => 'ASC' );
 	}
 ?>
-	<ul class="item">
+	<ul class="item" id="portfolio">
 		<?php $loop = new WP_Query( $args );
 			$contador = 1; //Iniciado em um para exibir um na primeira iteração
 			while ( $loop->have_posts() ) : $loop->the_post();

@@ -14,7 +14,7 @@
 
  ?>
 
-<ul class="groupboxes">
+<ul class="groupboxes groupboxes--blog" id="blog">
 	<?php $loop = new WP_Query( $args );
 		
 		$contador = 1; //Iniciado em um para exibir um na primeira iteração
@@ -43,12 +43,16 @@
 			<img src="<?php echo $urlThumbnail; ?>" alt="<?php echo get_the_title(); ?>">
 				<figcaption class="groupboxes__legend">
 					<div class="groupboxes__border <?php if( $contador % 2 == 0 ) { echo 'groupboxes__border--right'; } ?>">
-								<h5 class="groupboxes__title"><?php echo get_the_title(); ?></h5>
-								<span class="groupboxes__subtitle"><?php echo get_the_excerpt(); ?></span>
-							</div>
+						<h5 class="groupboxes__title"><?php echo get_the_title(); ?></h5>
+							<span class="groupboxes__subtitle"><?php echo get_the_excerpt(); ?></span>
+					</div>
 				</figcaption>
 			</a>
 		</figure>
 	</li>
 	<?php $contador += 1; //Incrementa o contador para a próxima iteração do loop ?>
     <?php endwhile; ?>
+</ul>
+<div class="groupboxes__vermais">
+			<a href="<?php echo home_url(); ?>/blog/" class="btn-plus"></a>
+		</div>	

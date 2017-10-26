@@ -11,8 +11,6 @@
 			</p>
 		</header>
 		<?php get_template_part('templates/blog','loop');?>
-		<div class="groupboxes__vermais">
-			<a href="<?php echo home_url(); ?>/blog/" class="btn-plus"></a>
-		</div>
+		
 	</div>
 </section>

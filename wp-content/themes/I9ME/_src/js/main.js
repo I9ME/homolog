@@ -38,7 +38,7 @@ jQuery(function($) {
 
 
 
-    $('.header .banner  .banner__layer').css({'height' : alturaTela+'px'}); 
+    $('.header .banner  .banner__layer').css({'height' : alturaTela+'vh'}); 
 
 
 // jQuery(document).ready(function($) {
@@ -67,10 +67,6 @@ jQuery(function($) {
 // });
 
 
-$('.sobre__play').magnificPopup({
-  type: 'image'
-  // other options
-});
 
 
 
@@ -136,20 +132,21 @@ $(window).scroll(function(){
     //   }
 
 // Checa se é um dispositivo móvel
-//jQuery(function(){
+jQuery(function(){
       ///Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
-      //if( window < 768) {
+      if( window < 768) {
 
-      //  jQuery('.containerowl').addClass('owl-carousel');
-      //  jQuery('.containerowl').attr('id', 'projetos');
-
-     // } else {
+        jQuery('.groupboxes').addClass('owl-carousel');
+        jQuery('.groupboxes').attr('id', 'portfolio');
+        jQuery('.groupboxes').addClass('owl-carousel');
+        jQuery('.groupboxes').attr('id', 'blog');
+      } else {
 
           //se for desktop
 
-     // }
+      }
 
-  //});
+  });
 
 
 
@@ -218,25 +215,44 @@ $("#clientes").owlCarousel({
     }
   }
 });
-// $("#projetos").owlCarousel({
-//   items: 1,
-//   nav: true,
-//   dots: true,
-//   navText: false,
-//   margin: 0,
-//    responsive: {
-//     0: {
-//       items: 1
-//     },
-//     600: {
-//       items: 1
-//     },
-//     1000: {
-//       items: 1
-//     }
-//   }
+$("#portfolio").owlCarousel({
+  items: 1,
+  nav: false,
+  dots: false,
+  navText: false,
+  margin: 0,
+   responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 2
+    }
+  }
 
-// });
+});
+$("#blog").owlCarousel({
+  items: 1,
+  nav: false,
+  dots: false,
+  navText: false,
+  margin: 0,
+   responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 2
+    }
+  }
+
+});
  
 
 
