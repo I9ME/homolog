@@ -253,7 +253,25 @@ $("#blog").owlCarousel({
   }
 
 });
- 
+$("#equipe").owlCarousel({
+  items: 1,
+  nav: false,
+  dots: true,
+  navText: false,
+  margin: 0,
+   responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 3
+    }
+  }
+
+});
 
 
 /*=========================================================================================

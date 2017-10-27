@@ -140,13 +140,10 @@
         @include respond-to(sm){
           display: none;
         }
+        
         @include respond-to(md){
-          transform: translateZ(-340px) scale(2)translateX(100px)translateY(525px);
+          transform: translateZ(-480px) scale(2)translateX(-316px)translateY(434px);
           display: block;
-        }
-        @include respond-to(md){
-          transform: translateZ(-441px) scale(2)translateX(-316px)translateY(434px);
-
 
         }
       }

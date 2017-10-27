@@ -1,7 +1,7 @@
 .depoimentos{
 	@extend %boxFull;
 		position: relative;
-		
+		margin-bottom: 30px;
 
 
 		@include e('carousel'){

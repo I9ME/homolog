@@ -133,7 +133,14 @@
 	    	position: relative;
 	    	top: 0;
 	    }
-	    
+	    @include m('resultados'){
+	    	@include span(.30);
+	    	    min-height: 181px;
+
+	    	@include respond-to(sm){
+	    	    min-height: 211px;
+	    	}
+	    }
 	    @include m('design'){
 	    	@include span(.25);
 	    	    min-height: 181px;
@@ -181,9 +188,10 @@
  		@extend %boxFull;
 			@include fonts(700, 30);
 			margin: 0;
+			color: #005193;
 			position: relative;
-			line-height: 60px;
-			max-width: 200px;
+			line-height: 85px;
+			max-width: 240px;
 			text-transform: uppercase;
  		    &:before{
  		    	border-style: solid;
@@ -193,8 +201,8 @@
 			    width: 100%;
  		    	border-width: 5px 5px 0;
 			    border-color: #fff;
-			    top: -30px;
-			    height: 30px;
+			    top: -35px;
+			    height: 35px;
 
 			   
  		    }
@@ -221,7 +229,21 @@
 
  			}
 
-
+ 			@include m('equipe'){
+ 					
+			 	&:before{
+			 		border-width: 5px 5px 0;
+				    border-style: solid;
+				    border-color: #005193;
+				    content: "";
+				    display: block;
+				    position: absolute;
+				    width: 100%;				    
+			 		height: 30px;
+			 		top: -30px;
+			 		opacity: 0.5;
+			 	}
+ 			}
 			@include m('before-blue'){
  		 		color: $white;
 			 	
@@ -356,12 +378,28 @@
 		}
 		@include m('dna'){
 			text-align: left;
+			h5{
+				font-weight: 500;
+			    margin: 0;
+			    font-size: 17px;
+			    line-height: 1;
+			    color: #797979;
+			    letter-spacing: 8px;
+			    margin-left: 2px;
+			}
 		}
 		@include m('resultado'){
 			//margin-top: 0px;
-			text-align: right;
+			text-align: left;
+			padding-left: 17px;
 			//margin-left: 17%;
-
+			h5{
+				font-weight: 500;
+			    margin:0;
+			    font-size: 18px;
+			    line-height: 1;
+			    color: #797979;
+			}
 			@include respond-to(sm){
 				//margin-top: 60px;
 				//text-align: left;
@@ -499,17 +537,3 @@
    
 }
 
-.icon-dna{
-	background: url(../images/dna.png);
-	width: 87px;
-    height: 71px;
-    display: inline-block;
-    margin-top: 90px;
-}
-.icon-resultados{
-	background: url(../images/resultados.png);
-	width: 65px;
-    height: 55px;
-    display: inline-block;
-    margin-top: 60px;
-}

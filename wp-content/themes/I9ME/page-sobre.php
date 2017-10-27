@@ -49,6 +49,7 @@
 							<h2 class="header-section__title header-section__title--design">
 								<div class="header-section__group header-section__group--dna">
 									<span class="icon-dna"></span>
+									<h5>NOSSO</h5>
 								</div>
 								<div class="header-section__group header-section__group--dna">
 									<span class="header-section__letter">D</span>
@@ -151,11 +152,13 @@
 						<p class="header-section__subtitle header-section__subtitle--right header-section__subtitle--txtright">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.
 						</p>
-						<div class="header-section__box header-section__box--design">
+						<div class="header-section__box header-section__box--resultados">
 							<h2 class="header-section__title header-section__title--resultados">
 								<div class="header-section__group header-section__group--resultado">
 									<span class="icon-resultados"></span>
+									<h5>NOSSOS</h5>
 								</div>
+
 								<div class="header-section__group header-section__group--resultado header-section__group--re">
 									<span class="header-section__letter">R</span>
 									<span class="header-section__letter">e</span>
@@ -163,20 +166,19 @@
 								<div class="header-section__group header-section__group--resultado">
 									<span class="header-section__letter">s</span>
 									<span class="header-section__letter">u</span>
-								</div>
-								<div class="header-section__group header-section__group--resultado">
 									<span class="header-section__letter header-section__letter--l">l</span>
+								</div>
+								<div class="header-section__group header-section__group--resultado">
 									<span class="header-section__letter">t</span>
-								</div>
-								<div class="header-section__group header-section__group--resultado">
 									<span class="header-section__letter">a</span>
-									<span class="header-section__letter">d</span>
-									
 								</div>
 								<div class="header-section__group header-section__group--resultado">
+									<span class="header-section__letter">d</span>
 									<span class="header-section__letter">o</span>
 									<span class="header-section__letter">s</span>
+									
 								</div>
+								
 			        		</h2>
 						</div>
 
@@ -291,10 +293,76 @@
 					adipisicing elit. Consectetur dolorum sequi voluptatem reprehenderit.	
 				</p>
 			</header>
-					<div class="owl-carousel depoimentos__carousel" id="depoimentos">
-						<?php get_template_part('templates/depoimento','loop');?>
-					</div>
+			<div class="owl-carousel depoimentos__carousel" id="depoimentos">
+				<?php get_template_part('templates/depoimento','loop');?>
+			</div>
 			
+		</div>
+	</section>
+	<section class="equipe">
+		<div class="equipe__background">
+			<div class="container">
+				<header class="header-section">
+					<div class="header-section__box">
+						<h2 class="header-section__title header-section__title--equipe">Equipe</h2>
+					</div>
+					
+					<p class="header-section__subtitle">
+						Lorem ipsum dolor sit amet, consectetur
+						adipisicing elit. Consectetur dolorum sequi voluptatem reprehenderit.	
+					</p>
+				</header>
+			</div>
+		</div>
+		<div class="container">
+			
+			<ul class="equipe__lista" id="equipe">
+				<li class="equipe__item">
+					<div class="equipe__profissional"></div>
+						<div class="equipe__box-nome">
+							<i class="icon-"></i><h3>Nome do Profissional</h3>
+						</div>
+						<div class="equipe__box-informacoes">
+							<i class="icon-ux"></i><h4>UX/UI/GRAPHIC DESIGNER</h4>
+						</div>
+						<div class="equipe__box-redes">
+							<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
+							<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
+							<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
+						</div>
+							
+				</li>
+				<li class="equipe__item">
+					<div class="equipe__profissional"></div>
+						<div class="equipe__box-nome">
+							<i class="icon-"></i><h3>Nome do Profissional</h3>
+						</div>
+						<div class="equipe__box-informacoes">
+							<i class="icon-dev"></i><h4>DESENVOLVEDOR</h4>
+						</div>
+						<div class="equipe__box-redes">
+							<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
+							<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
+							<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
+						</div>
+					
+				</li>
+				<li class="equipe__item">
+					<div class="equipe__profissional"></div>
+					<div class="equipe__box-nome">
+							<i class="icon-"></i><h3>Nome do Profissional</h3>
+						</div>
+						<div class="equipe__box-informacoes">
+							<i class="icon-pincel"></i><h4>REDATORA</h4>
+						</div>
+						<div class="equipe__box-redes">
+							<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
+							<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
+							<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
+						</div>
+					
+				</li>
+			</ul>
 		</div>
 	</section>
 </article>

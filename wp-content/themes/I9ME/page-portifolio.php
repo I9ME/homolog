@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="containerowl groupboxes portifolio-interna">
+		<div class="containerowl groupboxes portfolio-interna">
 	    	<?php get_template_part('templates/portfolio','loop');?>
 		</div>
 	</div>
