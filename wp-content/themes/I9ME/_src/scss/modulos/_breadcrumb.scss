@@ -12,7 +12,7 @@
 			display: block;
 		}
 		@include respond-to(md){
-			margin: 30px 0;
+			margin: 20px 0;
 		}
 	a:nth-of-type(1){
 		background: url(../images/home.png)no-repeat;
@@ -28,6 +28,7 @@
 		letter-spacing: 2px;
 		font-weight: 500;
 		margin-right: 15px;
+		    font-size: 16px;
 	}
 	.breadcrumb_last{
 		color: #aaa;
