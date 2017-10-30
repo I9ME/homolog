@@ -77,7 +77,10 @@
 		@include e('subtitulo'){
 			@include fonts(300, 16);
 			display: block;
-			color: $blue2;
+			
+			a{
+				color: $blue2;
+			}
 		}
 		@include e('info'){
 			margin: 0;

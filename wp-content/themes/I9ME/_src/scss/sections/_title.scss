@@ -128,7 +128,7 @@
  		display: flex;
 	    align-items: center;
 	    justify-content: center;
-
+	    margin-bottom: 30px;
 	    @include m('before-blue'){
 	    	position: relative;
 	    	top: 0;
@@ -190,9 +190,11 @@
 			margin: 0;
 			color: #005193;
 			position: relative;
-			line-height: 85px;
-			max-width: 240px;
+			//line-height: 85px;
+			line-height: 60px$i;
+			max-width: 222px;
 			text-transform: uppercase;
+
  		    &:before{
  		    	border-style: solid;
 			    content: "";
@@ -214,18 +216,18 @@
  		    	border-color: #005193;
 			    border-width: 0 5px 5px;
 			    border-style: solid;
-			    height: 65px;
+			    height: 65px$i;
 			    top: 0;
  		    }
 
 
 
  			@include respond-to(sm){
-				@include fonts(700, 40);
+				@include fonts(700, 30);
 				@include beforeWhite($brColorWhite: $white);
 				@include afterBlue($brColorBlue: $blue2);
-				line-height: 126px;	
-				max-width: 360px;
+				
+				
 
  			}
 
@@ -282,7 +284,9 @@
 			 	&:before,&:after{
 			 		display: none;
 			 	}
-
+			 	&:after{
+			 		height: 245px$i;
+			 	}
 			 	@include respond-to(sm){
 			 		@include beforeWhiteRight($brColorWhite: $white);
 			 		@include afterBlueRight($brColorBlue: $blue2);
@@ -296,7 +300,9 @@
 				&:before,&:after{
 			 		display: none;
 			 	}
-
+			 	&:after{
+			 		height: 245px$i;
+			 	}
 				@include respond-to(sm){
 			 		@include beforeGrayRight($brColorGray: $gray1);
 			 		@include afterWhiteRight($brColorWhite: $white);
@@ -341,19 +347,20 @@
 			}
 	}
 	@include e('group'){
-		line-height: 38px;
+		line-height: 40px;
 		text-align: left;
 
  		@include respond-to(sm){
-			line-height: 50px;
+			line-height: 22px;
 			text-align: center;
+			margin: 20px 0;
  		}
 	
 		@include m('de'){
 			margin-top: 0px;
 
 			@include respond-to(sm){
-				margin-top: 60px;
+				margin-top: 80px;
 			}
 		}
 
@@ -362,7 +369,7 @@
 			text-align: center;
 
 			@include respond-to(sm){
-				margin-top: 60px;
+				margin-top: 80px;
 				text-align: inherit;
 			}
 		}
@@ -432,6 +439,7 @@
 		@include m('center'){
 			margin-top: 0px;
 			text-align: center;
+			line-height: normal;
 
 		// @include respond-to(sm){
 		// 	margin-top: 0px;

@@ -1,7 +1,7 @@
 .header{
   $self : &;
   @extend %boxFull;
-  height: 85px;
+  height: 115px;
   z-index: 9999999999999999;
   position: fixed;
   transition: all 0.4s ease;
@@ -16,6 +16,7 @@
   
   @include e('menu-desktop'){
     padding: 15px 0;
+    transition: all 0.4s ease;
     width: 100%;
 
     @include respond-to(sm){
@@ -31,7 +32,7 @@
     }
 
     @include respond-to(md){
-      @include span(.20);
+      @include span(.17);
     }
 
     a{
@@ -41,11 +42,19 @@
         justify-content: space-between;
       }
     }
+    @include m('footer'){
+      @include span(.25);
+
+      @include e('name',$self){
+        @include span(.74);
+        display: inline-block;
+      }
+    }
   }
 
   @include e('logo'){
     @include span(.5);
-      border: 2px solid $white;
+      border: 3px solid $white;
       color: $white;
       @include fonts(700,21);
       height: 55px;
@@ -58,7 +67,7 @@
 
   @include e('letter'){
     @include span(.5);
-    @include fonts(600,23);
+    @include fonts(800,23);
     line-height: 1;
     
     @include m('n'){
@@ -96,7 +105,7 @@
     }
 
     @include respond-to(md){
-      @include span(.65);
+      @include span(.75);
       margin: 15px 0;
     }
 
@@ -108,12 +117,15 @@
         text-align: center;
 
         @include respond-to(sm){
-          margin-right: 12px;
+          margin-right: 20px;
           width: auto;
         }
-
+        @include respond-to(md){
+          margin-right: 30px;
+          width: auto;
+        }
         a{
-          @include fonts(400,15);
+          @include fonts(600,15);
           color: $white;
           text-transform: uppercase;
             @include respond-to(sm){
@@ -268,7 +280,7 @@
       text-align: center;
     }
     @include respond-to(md){
-       @include span(.15);
+       @include span(.06);
        text-align: center;
     }
 
@@ -389,7 +401,9 @@
  background: transparent;
  transition: all 0.5s;
  }
-
+.scrollOff .header__menu-desktop{
+  padding-top: 45px;
+}
 
 
 

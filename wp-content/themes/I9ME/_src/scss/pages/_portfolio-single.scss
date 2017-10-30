@@ -31,7 +31,10 @@
 	    margin-top: 0;
 	    margin-bottom: 30px;
 	    letter-spacing: 2px;
-	 	word-spacing: 3px; 		 	
+	 	word-spacing: 3px; 	
+	 	a{
+	 		color: $blue2;
+	 	}	 	
 	}
 
 	@include e('blocos'){

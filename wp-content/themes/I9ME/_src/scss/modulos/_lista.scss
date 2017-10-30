@@ -58,9 +58,15 @@
 	    margin: 0 auto;
 	    height: 100px;
 	    padding: 22px;
-
+	    @include respond-to(sm){
+	    	border: 0;
+	    }
 	    @include m('white'){
 	    	border: 1px solid $white;
+	    	
+	    	@include respond-to(sm){
+	    		border: 0;
+	    	}
 	    }
   	}
 

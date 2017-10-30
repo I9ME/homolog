@@ -73,10 +73,9 @@
 		</li>
 		<?php $contador += 1; //Incrementa o contador para a próxima iteração do loop ?>
 		<?php endwhile; ?> 
+		</ul>
 		<?php if( !is_home() && !is_front_page() ) { ?>
-			 <div class="groupboxes__vermais">
-				<a href="#more" class="borderradius"><i class="btn-plus" aria-hidden="true"></i></a>
-			</div>
+			 
 		<?php } ?>  	
-	</ul>
+	
 	   

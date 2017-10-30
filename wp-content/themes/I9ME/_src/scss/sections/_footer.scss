@@ -164,10 +164,10 @@
          }
 
          @include respond-to(md){
-             @include span(.8);
+             @include span(.75);
                 
                  text-align: right;
-                 margin: 10px 0px;
+                 margin: 20px 0px;
                  letter-spacing: 2px;
                  @include fonts(400,13);
          }

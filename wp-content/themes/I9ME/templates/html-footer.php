@@ -38,10 +38,19 @@
 		
 		<div class="footer__layerbottom">
 			<div class="container">
-				<div class="footer__brand">
-					<img src="wp-content/themes/I9ME/assets/images/i9me.png" alt="">
-					<span>Web & Design</span>
-				</div>
+				<div class="header__brand header__brand--footer">
+			        <a href="<?php echo home_url(); ?>">            
+			            <h1 class="header__logo">
+		                  	<span class="header__letter header--i">I</span>
+		                  	<span class="header__letter header--n">9</span>
+		                  	<span class="header__letter header--m">M</span>
+		                  	<span class="header__letter header--e">E</span>
+			            </h1>           
+			            <div class="header__name">
+			                <span class="">Web & Design</span>
+			            </div>
+			        </a>
+			     </div>
 				<div class="footer__copyright">
 					<span>Copyright © 2017 <strong>I9ME Web & Design.</strong> Todos os direitos reservados.</span>
 				</div>

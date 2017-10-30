@@ -1,5 +1,5 @@
 <?php get_template_part('templates/html','head'); ?>
-  <header class="header">  
+  <header class="header scrollOff">  
     <div class="header__menu-desktop">
       <div class="container">
        <div class="header__brand">

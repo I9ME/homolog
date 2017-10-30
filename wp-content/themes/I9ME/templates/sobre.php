@@ -20,7 +20,7 @@
 		
 		<div class="sobre__box-video">
 				
-				<iframe class="sobre__play-iframe" src="https://www.youtube.com/embed/bpOSxM0rNPM" frameborder="0" allowfullscreen></iframe>
+				<!-- <iframe class="sobre__play-iframe" src="https://www.youtube.com/embed/bpOSxM0rNPM" frameborder="0" allowfullscreen></iframe> -->
 				
 			
 				<a class="sobre__play" href="sobre__play"></a>

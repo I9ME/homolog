@@ -2,12 +2,13 @@
 	$self : &;
 	@extend %boxFull;
    	position: relative;
-   	margin-top: 40px;
+   	//margin-top: 30px$i;
    		//background: $blue2;
    		//margin-top: 90px;
    		// @include m('interna'){
-   		// 	margin-top: 0;
+   		//margin-top: 0;
    		// }
+  
 	@include e('layertop'){
 		@include span(1);
 		background: $blue2;
@@ -16,6 +17,7 @@
 
 		@include respond-to(sm){
 			min-height: 300px;
+			margin-top: 30px;
 		}
 			
 		&:before{
