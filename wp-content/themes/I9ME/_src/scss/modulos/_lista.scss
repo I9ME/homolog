@@ -58,6 +58,21 @@
 	    margin: 0 auto;
 	    height: 100px;
 	    padding: 22px;
+
+	    .icon-hover{
+	    	display: none;
+	    }
+	  	&:hover{
+	    	background: #005193;
+	    	transition: all .8s ease;
+    	    .icon-hover{
+    	    	display: inline-block;
+
+    	    }
+	    	.icon{
+	    		display: none;
+	    	}
+	    }
 	    @include respond-to(sm){
 	    	border: 0;
 	    }
@@ -72,12 +87,16 @@
 
   	@include e('smalltitle'){
 		margin: 20px 0 10px;
-		
+		color: $black;
+		@include fonts(700,20);
 		span{
-			color: $blue2;
+			color: #007ad7;
+			letter-spacing: 1px;
+			width: 11px;
+    		display: inline-block;
 		}
 		a{
-			@include fonts(700,16);
+			//@include fonts(700,16);
 			color: $blue2;
 			text-transform: normal;
 			@include respond-to(md){

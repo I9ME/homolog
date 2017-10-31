@@ -346,11 +346,13 @@ $childargs = array(
 <?php wp_reset_query(); ?>
 
 <div class="controls">
-		
-		<?php previous_post_link(   '%link', '', $in_same_term = true, $excluded_terms = '', $taxonomy = 'tipo-de-servico' ); ?>
+		<span class="controls__left">
+			<?php previous_post_link(   '%link', '', $in_same_term = true, $excluded_terms = '', $taxonomy = 'tipo-de-servico' ); ?>
+		</span>
 		<a href="<?php echo home_url(); ?>/servicos/" class="controls__center"></a>
-
-		<?php next_post_link(   '%link', '', $in_same_term = true, $excluded_terms = '', $taxonomy = 'tipo-de-servico' ); ?>
+		<span class="controls__right">
+			<?php next_post_link(   '%link', '', $in_same_term = true, $excluded_terms = '', $taxonomy = 'tipo-de-servico' ); ?>
+		</span>
 
 </div>
 	<div class="criacao__bottom-paralax">

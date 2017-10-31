@@ -84,7 +84,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Soluções<br/> Digitais</a></h5>
+									<h5 class="lista__smalltitle">Soluções<br/> Digitais</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -100,7 +100,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Design<br/> Criativo</a></h5>
+									<h5 class="lista__smalltitle">Design<br/> Criativo</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -116,7 +116,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Inovação<br/> {mode <span>= </span>ON}</a></h5>
+									<h5 class="lista__smalltitle">Inovação<br/> {mode <span>=</span> ON}</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -132,7 +132,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Café <br/>{mode <span>=</span> InfiniteLoop}</a></h5>
+									<h5 class="lista__smalltitle">Café <br/>{mode <span>=</span> InfiniteLoop}</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -206,7 +206,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Soluções<br/> Digitais</a></h5>
+									<h5 class="lista__smalltitle"><span>+</span>Presença<br/> Digital</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -222,7 +222,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Design<br/> Criativo</a></h5>
+									<h5 class="lista__smalltitle"><span>+</span>Clientes<br/> e Vendas</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -238,7 +238,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Inovação<br/> {mode <span>= </span>ON}</a></h5>
+									<h5 class="lista__smalltitle"><span>+</span>Aproximação<br/> com seus Clientes</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -254,7 +254,7 @@
 									</div>
 								</a>							
 								<figcaption>
-									<h5 class="lista__smalltitle"><a href="#">Café <br/>{mode <span>=</span> InfiniteLoop}</a></h5>
+									<h5 class="lista__smalltitle"><span>+</span>Reconhecimento<br/> para a sua Marca</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
@@ -265,7 +265,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="clientes">
 		<div class="container">		
 			<header class="header-section header-section--area-clientes">
@@ -273,12 +272,9 @@
 					<h2 class="header-section__title header-section__title--before-blue">Clientes</h2>
 				</div>
 			</header>
-			
-				<div class="clientes__carousel" id="clientes">
-					<?php get_template_part('templates/clientes','loop');?>
-				</div>
-			
-			
+			<div class="clientes__carousel" id="clientes">
+				<?php get_template_part('templates/clientes','loop');?>
+			</div>
 		</div>
 	</section>
 	<section class="depoimentos" id="depoimento">

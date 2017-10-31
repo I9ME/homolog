@@ -6,7 +6,7 @@
 
 		@include e('lista-servicos'){
 		 	@include span(1);
-			background: #e4e3e3;
+			background: #f7f7f7;
       padding: 0;
       position: relative;
       @include respond-to(sm){
@@ -260,7 +260,7 @@
    	 			}
    	 			@include respond-to(md){
    	 				//@include span(.5);
-   	 				width: 82%;
+   	 				width: 50%;
    	 				margin: 0;
    	 			    display: flex;
 				    align-items: center;	
@@ -299,7 +299,7 @@
             // }
           }
    	 		@include e('legenda'){
-   	 			@include span(1);
+   	 			@include span(.5);
    	 				background: #eee;
             margin-bottom: 20px;
             padding: 30px;

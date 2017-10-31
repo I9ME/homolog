@@ -80,7 +80,8 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 								<div class="lista__bordas">
 										<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
 										<i class="servicos__<?php echo $slug; ?>">
-											<img src="<?php echo $icone; ?>" alt="<?php echo the_title(); ?>" />
+											<img class="icon" src="<?php echo $icone; ?>" alt="<?php echo the_title(); ?>" />
+											<img class="icon-hover" src="<?php echo $icone_hover; ?>" alt="<?php echo the_title(); ?>" />
 										</i>
 								</div>
 							</a>							
@@ -163,7 +164,8 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 								<a href="<?php echo get_permalink(); ?>">
 									<div class="lista__bordas lista__bordas--white">
 											<i class="lista__<?php echo $slug; ?>">
-												<img src="<?php echo $icone; ?>" alt="<?php echo the_title(); ?>" />
+												<img class="icon" src="<?php echo $icone; ?>" alt="<?php echo the_title(); ?>" />
+												<img class="icon-hover" src="<?php echo $icone_hover; ?>" alt="<?php echo the_title(); ?>" />
 											</i>
 									</div>
 								</a>							

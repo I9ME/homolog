@@ -6,7 +6,7 @@
 	    text-align: center;
 
 	    @include e('left'){
-	    	background: url(../images/controls-left.png)no-repeat;
+	    	background: url(../images/control-left.png)no-repeat;
 	    	width: 30px;
 		    height: 22px;
 		    display: inline-block;
@@ -14,7 +14,7 @@
 		    float: left;
 	    }
 	     @include e('right'){
-	    	background: url(../images/controls-right.png)no-repeat;
+	    	background: url(../images/control-right.png)no-repeat;
 	    	width: 30px;
 		    height: 22px;
 		    display: inline-block;
@@ -22,7 +22,7 @@
 		    float: right;
 	    }
 	     @include e('center'){
-	    	background: url(../images/controls.png)no-repeat;
+	    	background: url(../images/control-center.png)no-repeat;
 	    	width: 35px;
 		    height: 35px;
 		    display: inline-block;
