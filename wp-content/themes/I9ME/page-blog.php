@@ -33,32 +33,30 @@ if ( has_post_thumbnail() ) {
 			<p class="banner-single__subtitle"><?php echo $resumoPage; ?></p>
 		</header>
 	</div>
-	<div class="criacao__lista-servicos">
-			<ul class="criacao__lista">
-				<?php 
+	<!-- <div class="criacao__lista-servicos">
+		<ul class="criacao__lista">
+			<?php  
 
-					$categories = get_categories( array(
-					    'orderby' => 'name',
-					    'parent'  => 0
-					) );
-					 
-					foreach ( $categories as $category ) {
-						if ( $slug_current == $category->slug ) {
-							$is_active = ' active';
-						} else {
-							$is_active = '';
-						}
-					    printf( '<li class="' .  $category->slug . $is_active . '"><a href="%1$s"><h5>%2$s</h5></a></li>',
-					        esc_url( get_category_link( $category->term_id ) ),
-					        esc_html( $category->name )
-					    );
+				$categories = get_categories( array(
+				    'orderby' => 'name',
+				    'parent'  => 0
+				) );
+				 
+				foreach ( $categories as $category ) {
+					if ( $slug_current == $category->slug ) {
+						$is_active = ' active';
+					} else {
+						$is_active = '';
 					}
+				    printf( '<li class="' .  $category->slug . $is_active . '"><a href="%1$s"><h5>%2$s</h5></a></li>',
+				        esc_url( get_category_link( $category->term_id ) ),
+				        esc_html( $category->name )
+				    );
+				}
 
-				 ?>
-
-				
-			</ul>
-		</div>
+			 ?>
+		</ul>
+	</div> -->
 <article class="page-blog">
 	<section class="blog">
 		<div class="container">

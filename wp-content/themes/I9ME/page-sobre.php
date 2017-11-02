@@ -42,8 +42,7 @@
 	<section class="dna">
 		<div class="container">
 			<div class="boxes boxes--paralax">
-				<div class="boxes__box-left boxes__box-left--paralax"  id="group7">
-					
+				<div class="boxes__box-left boxes__box-left--paralax"  id="group7">					
 					<header class="header-section header-section--area-design">
 						<div class="header-section__box header-section__box--design header-section__box--dna">
 							<h2 class="header-section__title header-section__title--design">
@@ -58,31 +57,24 @@
 								</div>
 			        		</h2>
 						</div>
-
 						<p class="header-section__subtitle header-section__subtitle--right">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.</p>
-					</header>
-
-					
+					</header>				
 			      	<div class="boxes__layer boxes__layer--back boxes__layer--back-pc">
 			        	<div class="boxes__pc"></div>
-			      	</div>
-			      	
+			      	</div>		      	
 				</div>
-
 				<div class="boxes__box-right">
 					<ul class="lista">
 										
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Solucao Digital">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/solucao-digital.png" alt="Solucao-digital">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/solucao-digital.png" alt="Solucao-digital">
+									</i>
+								</div>						
 								<figcaption>
 									<h5 class="lista__smalltitle">Soluções<br/> Digitais</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -91,14 +83,12 @@
 						</li>	
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Design Criativo">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img  src="<?php echo get_template_directory_uri(); ?>/assets/images/design-criativo.png" alt="design-criativo">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img  src="<?php echo get_template_directory_uri(); ?>/assets/images/design-criativo.png" alt="design-criativo">
+									</i>
+								</div>							
 								<figcaption>
 									<h5 class="lista__smalltitle">Design<br/> Criativo</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -107,14 +97,12 @@
 						</li>
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Inovação">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao.png" alt="inovacao">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao.png" alt="inovacao">
+									</i>
+								</div>							
 								<figcaption>
 									<h5 class="lista__smalltitle">Inovação<br/> {mode <span>=</span> ON}</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -123,14 +111,12 @@
 						</li>	 	
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Café">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cafe.png" alt="cafe">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cafe.png" alt="cafe">
+									</i>
+								</div>													
 								<figcaption>
 									<h5 class="lista__smalltitle">Café <br/>{mode <span>=</span> InfiniteLoop}</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -143,7 +129,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="resultados">
 		<div class="container">
 			<div class="boxes boxes--reverse  boxes--paralax">
@@ -158,7 +143,6 @@
 									<span class="icon-resultados"></span>
 									<h5>NOSSOS</h5>
 								</div>
-
 								<div class="header-section__group header-section__group--resultado header-section__group--re">
 									<span class="header-section__letter">R</span>
 									<span class="header-section__letter">e</span>
@@ -175,36 +159,26 @@
 								<div class="header-section__group header-section__group--resultado">
 									<span class="header-section__letter">d</span>
 									<span class="header-section__letter">o</span>
-									<span class="header-section__letter">s</span>
-									
-								</div>
-								
+									<span class="header-section__letter">s</span>		
+								</div>								
 			        		</h2>
 						</div>
-
 					</header>
-					
-					
 			      	<div class="boxes__layer boxes__layer--back-resultado">
 			        	<div class="boxes__resultado"></div>
 			      	</div>
-			      	
-					
 				</div>
-
 				<div class="boxes__box-right">
 					<ul class="lista">
 										
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Presença Digital">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/presenca-digital.png" alt="Presença Digital">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/presenca-digital.png" alt="Presença Digital">
+									</i>
+								</div>							
 								<figcaption>
 									<h5 class="lista__smalltitle"><span>+</span>Presença<br/> Digital</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -213,14 +187,12 @@
 						</li>	
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Clientes e Vendas">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img  src="<?php echo get_template_directory_uri(); ?>/assets/images/clientes-venda.png" alt="Clientes e Venda">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img  src="<?php echo get_template_directory_uri(); ?>/assets/images/clientes-venda.png" alt="Clientes e Venda">
+									</i>
+								</div>						
 								<figcaption>
 									<h5 class="lista__smalltitle"><span>+</span>Clientes<br/> e Vendas</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -229,14 +201,12 @@
 						</li>
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Aproximacao">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/aproximacao.png" alt="aproximacao">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/aproximacao.png" alt="aproximacao">
+									</i>
+								</div>							
 								<figcaption>
 									<h5 class="lista__smalltitle"><span>+</span>Aproximação<br/> com seus Clientes</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -245,14 +215,12 @@
 						</li>	 	
 						<li class="lista__item">
 							<figure>
-								<a href="#" title="Reconhecimento">
-									<div class="">
-											<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
-											<i class="">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/reconhecimento.png" alt="Reconhecimento">
-											</i>
-									</div>
-								</a>							
+								<div class="">
+									<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
+									<i class="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/reconhecimento.png" alt="Reconhecimento">
+									</i>
+								</div>				
 								<figcaption>
 									<h5 class="lista__smalltitle"><span>+</span>Reconhecimento<br/> para a sua Marca</h5>
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
@@ -283,7 +251,6 @@
 				<div class="header-section__box">
 					<h2 class="header-section__title">Depoimentos</h2>
 				</div>
-				
 				<p class="header-section__subtitle">
 					Lorem ipsum dolor sit amet, consectetur
 					adipisicing elit. Consectetur dolorum sequi voluptatem reprehenderit.	
@@ -292,7 +259,6 @@
 			<div class="owl-carousel depoimentos__carousel" id="depoimentos">
 				<?php get_template_part('templates/depoimento','loop');?>
 			</div>
-			
 		</div>
 	</section>
 	<section class="equipe">
@@ -302,7 +268,6 @@
 					<div class="header-section__box">
 						<h2 class="header-section__title header-section__title--equipe">Equipe</h2>
 					</div>
-					
 					<p class="header-section__subtitle">
 						Lorem ipsum dolor sit amet, consectetur
 						adipisicing elit. Consectetur dolorum sequi voluptatem reprehenderit.	
@@ -311,52 +276,48 @@
 			</div>
 		</div>
 		<div class="container">
-			
 			<ul class="equipe__lista" id="equipe">
 				<li class="equipe__item">
 					<div class="equipe__profissional"></div>
-						<div class="equipe__box-nome">
-							<i class="icon-"></i><h3>Nome do Profissional</h3>
-						</div>
-						<div class="equipe__box-informacoes">
-							<i class="icon-ux"></i><h4>UX/UI/GRAPHIC DESIGNER</h4>
-						</div>
-						<div class="equipe__box-redes">
-							<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
-							<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
-							<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
-						</div>
-							
-				</li>
-				<li class="equipe__item">
-					<div class="equipe__profissional"></div>
-						<div class="equipe__box-nome">
-							<i class="icon-"></i><h3>Nome do Profissional</h3>
-						</div>
-						<div class="equipe__box-informacoes">
-							<i class="icon-dev"></i><h4>DESENVOLVEDOR</h4>
-						</div>
-						<div class="equipe__box-redes">
-							<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
-							<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
-							<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
-						</div>
-					
+					<div class="equipe__box-nome">
+						<i class="icon-"></i><h3>Nome do Profissional</h3>
+					</div>
+					<div class="equipe__box-informacoes">
+						<i class="icon-ux"></i><h4>UX/UI/GRAPHIC DESIGNER</h4>
+					</div>
+					<div class="equipe__box-redes">
+						<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
+						<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
+						<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
+					</div>		
 				</li>
 				<li class="equipe__item">
 					<div class="equipe__profissional"></div>
 					<div class="equipe__box-nome">
-							<i class="icon-"></i><h3>Nome do Profissional</h3>
-						</div>
-						<div class="equipe__box-informacoes">
-							<i class="icon-pincel"></i><h4>REDATORA</h4>
-						</div>
-						<div class="equipe__box-redes">
-							<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
-							<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
-							<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
-						</div>
-					
+						<i class="icon-"></i><h3>Nome do Profissional</h3>
+					</div>
+					<div class="equipe__box-informacoes">
+						<i class="icon-dev"></i><h4>DESENVOLVEDOR</h4>
+					</div>
+					<div class="equipe__box-redes">
+						<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
+						<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
+						<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
+					</div>
+				</li>
+				<li class="equipe__item">
+					<div class="equipe__profissional"></div>
+					<div class="equipe__box-nome">
+						<i class="icon-"></i><h3>Nome do Profissional</h3>
+					</div>
+					<div class="equipe__box-informacoes">
+						<i class="icon-pincel"></i><h4>REDATORA</h4>
+					</div>
+					<div class="equipe__box-redes">
+						<a href="#" title="Facebook"><i class="icone fa fa-facebook"></i></a>
+						<a href="#" title="Instagram"><i class="icone fa fa-instagram"></i></a>
+						<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
+					</div>
 				</li>
 			</ul>
 		</div>

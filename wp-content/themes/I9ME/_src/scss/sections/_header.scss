@@ -89,7 +89,7 @@
     }
 
     @include respond-to(md){
-      @include span(.49);
+      @include span(.55);
       display: block;
     }
     
@@ -280,7 +280,7 @@
       text-align: center;
     }
     @include respond-to(md){
-       @include span(.06);
+       @include span(.08);
        text-align: center;
     }
 

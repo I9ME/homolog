@@ -48,7 +48,7 @@
       max-width: 670px;
       display: block;
       width: 100%;
-      transform: translateY(120%);
+      transform: translateY(100%);
       
     }
 
@@ -56,18 +56,19 @@
   }
 
   @include e('title'){
-    @include fonts(700,22);
+    @include fonts(700,25);
     margin: 0;
     width: 100%;
     
     @include respond-to(sm){
-      @include fonts(700,33);
+      @include fonts(700,30);
       margin: 0;
     }
 
     @include respond-to(md){
-      @include fonts(700,43);
-      margin-bottom: 15px;
+      @include fonts(700,50);
+      margin-bottom: 30px;
+
     }
 
     
@@ -75,7 +76,7 @@
   }
 
   @include e('subtitle'){
-    font-size: 15px;  
+    font-size: 16px;  
     width: 100%;
       
     @include respond-to(sm){
@@ -84,8 +85,8 @@
     }
 
     @include respond-to(md){
-      @include fonts(300,16);
-        max-width: 350px;
+      @include fonts(300,25);
+        max-width: 500px;
         margin: 0 auto;
     }
 
@@ -117,7 +118,7 @@
         transform: translateY(50px);
       }
       @include respond-to(md){
-        transform: translateY(95px);
+        transform: translateY(35px);
       }
      
   }

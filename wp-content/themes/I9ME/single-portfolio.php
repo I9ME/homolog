@@ -187,10 +187,16 @@
 	<?php } ?>
 	<?php endwhile; ?>
 	<?php wp_reset_query(); ?>
-	<div class="controls">		
-		<?php previous_post_link('%link', '' );  ?>
+	<div class="controls">
+		<a class="controls__left">
+			<?php previous_post_link(   '%link', '', $in_same_term = true, $excluded_terms = '', $taxonomy = 'tipo-de-servico' ); ?>
+		</a>
+		
 		<a href="<?php echo home_url(); ?>/portfolios/" class="controls__center"></a>
-		<?php next_post_link(  '%link', '' ); ?>
+		
+		<a class="controls__right">
+			<?php next_post_link(   '%link', '', $in_same_term = true, $excluded_terms = '', $taxonomy = 'tipo-de-servico' ); ?>
+		</a>
 	</div>
 </article>
 <?php get_template_part('templates/newsletter','home');?>

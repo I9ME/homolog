@@ -3,7 +3,7 @@
 	@extend %boxFull;
 	@include span(1);
 	background: $white;
-	border-bottom: 1px solid #dedddd;
+	border-bottom: 1px solid #eee;
 
 	#breadcrumbs{
 		display: none;
@@ -12,7 +12,8 @@
 			display: block;
 		}
 		@include respond-to(md){
-			margin: 20px 0;
+			margin: 25px 0;     
+			
 		}
 	a:nth-of-type(1){
 		background: url(../images/home.png)no-repeat;
@@ -28,7 +29,8 @@
 		letter-spacing: 2px;
 		font-weight: 500;
 		margin-right: 15px;
-		    font-size: 16px;
+		font-size: 13px;
+
 	}
 	.breadcrumb_last{
 		color: #aaa;

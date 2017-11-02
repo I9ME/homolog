@@ -132,24 +132,73 @@ $(window).scroll(function(){
     //   }
 
 // Checa se é um dispositivo móvel
-jQuery(function(){
-      ///Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
-      if( window < 768) {
 
-        jQuery('.groupboxes').addClass('owl-carousel');
-        jQuery('.groupboxes').attr('id', 'portfolio');
-        jQuery('.groupboxes').addClass('owl-carousel');
-        jQuery('.groupboxes').attr('id', 'blog');
-      } else {
+// var portfolio = document.ElementsById("portfolio");
+// var largura = window();
 
-          //se for desktop
+      // ///Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+      // if( largura > 768) {
 
-      }
+      //   portfolio.removeClass("owl-carousel")
+      //   //se for desktop
+      //   // jQuery('.groupboxes').addClass('owl-carousel');
+      //   // jQuery('.groupboxes').addClass('owl-carousel');
+      //   // jQuery('.groupboxes').attr('id', 'blog');
+      // } else {
 
+
+      // }
+  $(window).resize(function(){
+    resizeRemoveOwl();
+    resizeWin();
   });
 
+  function resizeRemoveOwl(){
+    if ($(window).width() > 767){
 
+        $(".item").removeClass("owl-carousel owl-theme owl-loaded owl-hidden");
+        $(".item").removeAttr('id', 'portfolio');
+      } 
+  }
+  //ativa o owl-carousel portfolio em 767 de largura.
+  function resizeWin(){
 
+    if ($(window).width() <= 767) {
+      owlportfolio();
+      owlblog();
+    }
+      
+  }
+  function owlportfolio(){
+    $("#portfolio").owlCarousel({
+      items: 1,
+      nav: false,
+      dots: false,
+      navText: false,
+      margin: 0,
+        responsive: {
+          0: {
+            items: 1
+          }  
+        }
+    });
+  }
+  function owlblog(){
+    $("#blog").owlCarousel({
+      items: 1,
+      nav: false,
+      dots: false,
+      navText: false,
+      margin: 0,
+        responsive: {
+          0: {
+            items: 1
+          }  
+        }
+    });
+  }
+
+  
 
 
 
@@ -215,44 +264,26 @@ $("#clientes").owlCarousel({
     }
   }
 });
-$("#portfolio").owlCarousel({
-  items: 1,
-  nav: false,
-  dots: false,
-  navText: false,
-  margin: 0,
-   responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 2
-    },
-    1000: {
-      items: 2
-    }
-  }
 
-});
-$("#blog").owlCarousel({
-  items: 1,
-  nav: false,
-  dots: false,
-  navText: false,
-  margin: 0,
-   responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 2
-    },
-    1000: {
-      items: 2
-    }
-  }
+// $("#blog").owlCarousel({
+//   items: 1,
+//   nav: false,
+//   dots: false,
+//   navText: false,
+//   margin: 0,
+//    responsive: {
+//     0: {
+//       items: 1
+//     },
+//     600: {
+//       items: 2
+//     },
+//     1000: {
+//       items: 2
+//     }
+//   }
 
-});
+// });
 $("#equipe").owlCarousel({
   items: 1,
   nav: false,

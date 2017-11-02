@@ -191,8 +191,8 @@
 			color: #005193;
 			position: relative;
 			//line-height: 85px;
-			line-height: 60px$i;
-			max-width: 222px;
+			line-height: 70px$i;
+			max-width: 242px;
 			text-transform: uppercase;
 
  		    &:before{
@@ -216,7 +216,7 @@
  		    	border-color: #005193;
 			    border-width: 0 5px 5px;
 			    border-style: solid;
-			    height: 65px$i;
+			    height: 85px$i;
 			    top: 0;
  		    }
 
@@ -487,7 +487,7 @@
 	    	width: 100%;
 			@include respond-to(sm){
     			@include span(.75);
-	    		background: hsla(0, 100%, 100%, 0.13);
+	    		//background: hsla(0, 100%, 100%, 0.13);
     			height: 244px;
     			padding-left: 30px;
     			text-align: left;

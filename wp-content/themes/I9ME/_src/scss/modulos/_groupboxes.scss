@@ -13,7 +13,7 @@
 		li{
 			width: 100%;
 			@include respond-to(sm){
-				
+				@include span(.5);
 			}
 		}
 	}
@@ -21,6 +21,7 @@
 		@include span(1);
 			position: relative;
 			@include respond-to(sm){
+				@include span(.5);
 			}
 
 		&:hover{
@@ -35,7 +36,7 @@
 			height: 250px;
 			@include respond-to(sm){
 				
-		    	border: 1px solid rgba(0, 0, 0, 0.1);
+		    	//border: 1px solid rgba(0, 0, 0, 0.1);
 				display: inline-block;
 				height: auto;
 				max-width: 100%;
