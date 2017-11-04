@@ -299,13 +299,13 @@
             // }
           }
    	 		@include e('legenda'){
-   	 			@include span(.5);
-   	 				background: #eee;
+          @include span(1);
+            background: #eee;
             margin-bottom: 20px;
             padding: 30px;
-   	 				//padding: 52px 60px;
+            //padding: 52px 60px;
 
-   	 			h5{
+          h5{
             color: $blue7;
             margin: 10px 0 20px;
             @include fonts(700,18);
@@ -313,11 +313,12 @@
                 margin-bottom: 25px;
                 margin-top: 0;
             }
-   	 			}
+          }
           p{
             margin:0;
           }
-   	 			@include respond-to(md){
+          @include respond-to(md){
+   	 			  @include span(.5);
    	 				//@include span(.5);
             margin: 0;
             padding: 40px 40px;

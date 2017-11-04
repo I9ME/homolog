@@ -59,7 +59,13 @@
 						</div>
 						<p class="header-section__subtitle header-section__subtitle--right">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.</p>
-					</header>				
+					</header>
+					<header class="title-servicos">
+						<h2>DNA</h2>
+						<p class="subtitle-servicos">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque
+						</p>
+					</header>  				
 			      	<div class="boxes__layer boxes__layer--back boxes__layer--back-pc">
 			        	<div class="boxes__pc"></div>
 			      	</div>		      	
@@ -164,6 +170,12 @@
 			        		</h2>
 						</div>
 					</header>
+					<header class="title-servicos">
+						<h2>RESULTADOS</h2>
+						<p class="subtitle-servicos">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque
+						</p>
+					</header>  
 			      	<div class="boxes__layer boxes__layer--back-resultado">
 			        	<div class="boxes__resultado"></div>
 			      	</div>

@@ -39,8 +39,14 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 					 ?>
 					</p>
 				</header>
-				
-				    
+				<header class="title-servicos">
+					<h2>Design</h2>
+					<p class="subtitle-servicos">
+					<?php 
+						echo $term_design->description;
+					 ?>
+					</p>
+				</header>    
 				<div class="boxes__layer boxes__layer--base">
 		        	<div class="boxes__bg-lapis"></div>
 		      	</div>
@@ -127,8 +133,16 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 			        		</h2>
 						</div>
 
+					</header> 
+					
+					<header class="title-servicos">
+						<h2>WEB</h2>
+						<p class="subtitle-servicos">
+						<?php 
+							echo $term_design->description;
+						 ?>
+						</p>
 					</header>
-
 					<div class="boxes__layer boxes__layer--deep-right">
 		        		<div class="boxes__bg-phone"></div>
 		      		</div>

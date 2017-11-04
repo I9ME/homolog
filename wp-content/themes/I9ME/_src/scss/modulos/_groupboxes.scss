@@ -20,6 +20,7 @@
 	 @include e('boxitem'){
 		@include span(1);
 			position: relative;
+			background: #005193;
 			@include respond-to(sm){
 				@include span(.5);
 			}
@@ -27,12 +28,23 @@
 		&:hover{
 			transition: all .6s;
 		}
-		
+		&:nth-child(2){
+			background: #4080ff;
+		} 
+		&:nth-child(3){
+			background: #4080ff;	
+		}
+		&:nth-child(6){
+			background: #4080ff;	
+		}
+		&:nth-child(7){
+			background: #4080ff;	
+		}
 	 }
 
 	 @include e('hover'){
 		@include span(1);
-			background: #005193;
+			
 			height: 250px;
 			@include respond-to(sm){
 				

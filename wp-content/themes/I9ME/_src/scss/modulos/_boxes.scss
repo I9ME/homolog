@@ -114,7 +114,7 @@
 
         }
         @include respond-to(md){
-          transform: translateZ(-340px) scale(2)translateX(-16px)translateY(399px);
+          transform: translateZ(-340px) scale(2)translateX(-16px)translateY(426px);
 
         }
       }
@@ -153,10 +153,10 @@
         
         @include respond-to(sm){
           transform: translateZ(-600px) scale(3)translateX(34px)translateY(262px);
-          opacity: 0.2;
+          opacity: 0;
         }
         @include respond-to(md){
-          transform: translateZ(-340px) scale(2)translateX(168px)translateY(232px);
+          transform: translateZ(-340px) scale(2)translateX(168px)translateY(262px);
           opacity: 1;
         }
       }
@@ -169,7 +169,7 @@
 
         }
         @include respond-to(md){
-          transform: translateZ(-600px) scale(3)translateX(-68px)translateY(314px);
+          transform: translateZ(-600px) scale(3)translateX(-68px)translateY(340px);
         }
        
       }
@@ -179,7 +179,7 @@
         
         @include respond-to(sm){
           transform: translateZ(-600px) scale(3)translateX(34px)translateY(351px);
-          opacity: 0.2;
+          opacity: 0;
         }
         @include respond-to(md){
           transform: translateZ(-600px) scale(3)translateX(164px)translateY(218px);
@@ -201,18 +201,37 @@
     width: 100%;
     float: left;
     height: 180px;
+
+    @include respond-to(sm){
+      opacity: 0;
+    }
+    @include respond-to(md){
+      opacity: 1;
+    }
   }
   @include e('lapis'){
     background: url(../images/lapis.png)no-repeat;
     width: 100%;
     float: left;
     height: 270px;
+    @include respond-to(sm){
+      opacity: 0;
+    }
+    @include respond-to(md){
+      opacity: 1;
+    }
   }
   @include e('sombra'){
     background: url(../images/sombra.png)no-repeat;
     width: 100%;
     float: left;
     height: 271px;
+    @include respond-to(sm){
+      opacity: 0;
+    }
+    @include respond-to(md){
+      opacity: 1;
+    }
   }
   @include e('bg-phone'){
     background: url(../images/smartPhone_bg.png)no-repeat;

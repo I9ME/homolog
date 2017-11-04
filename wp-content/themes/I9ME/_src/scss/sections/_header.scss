@@ -11,7 +11,7 @@
 
   @include respond-to(md){
     @include Display_flex(flex,stretch,center);
-    height: 85px;
+    height: 145px;
   }
   
   @include e('menu-desktop'){
