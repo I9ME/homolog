@@ -19,11 +19,16 @@
 	
 		
 		<div class="sobre__box-video">
-				
+				<div class="sobre__title">
+					<a href="#">
+						<h2>Saiba mais</h2><br/>
+						<span>Sobre nós</span>
+					</a>
+				</div>
 				<!-- <iframe class="sobre__play-iframe" src="https://www.youtube.com/embed/bpOSxM0rNPM" frameborder="0" allowfullscreen></iframe> -->
 				
 			
-				<a class="sobre__play" href="sobre__play"></a>
+<!-- 				<a class="sobre__play" href="sobre__play"></a> -->
 				<!-- <a href="#" title="Assista ao Vídeo">
 					<div class="sobre__border"><i class="fa fa-play" aria-hidden="true"></i></div>
 				</a>

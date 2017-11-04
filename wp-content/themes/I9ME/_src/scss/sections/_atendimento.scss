@@ -8,8 +8,10 @@
 		position: relative;
 		min-height: 865px;
 		margin-top: 30px;
+		padding-bottom: 70px;
 		@include respond-to(sm){
-		margin-top: 20px;
+			margin-top: 20px;
+			padding-bottom: 0px;
 		}
 
 		

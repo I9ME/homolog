@@ -46,7 +46,7 @@
       @include span(.25);
 
       @include e('name',$self){
-        @include span(.74);
+        @include span(.67);
         display: inline-block;
       }
     }

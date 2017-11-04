@@ -17,7 +17,7 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 			<div class="boxes__box-left boxes__box-left--paralax"  id="group4">
 				<header class="header-section header-section--area-design">
 					<div class="header-section__box header-section__box--design">
-						<h2 class="header-section__title header-section__title--design">
+						<!-- <h2 class="header-section__title header-section__title--design">
 							<div class="header-section__group header-section__group--de">
 								<span class="header-section__letter">D</span>
 								<span class="header-section__letter">e</span>
@@ -30,14 +30,18 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 								<span class="header-section__letter">g</span>
 								<span class="header-section__letter">n</span>
 							</div>
-		        		</h2>
+		        		</h2> -->  
+						<span class="header-section__title header-section__title--design">
+							<i class="icon-design"></i>
+						</span>
 					</div>
-
-					<p class="header-section__subtitle header-section__subtitle--right">
-					<?php 
-						echo $term_design->description;
-					 ?>
-					</p>
+					<div class="bloco-title">
+		        		<h2 class="title-design">DESIGN</h2>
+						<p class="subtitle-design">
+							<?php echo $term_design->description; ?>
+						</p>
+					</div>
+					
 				</header>
 				<header class="title-servicos">
 					<h2>Design</h2>
@@ -114,13 +118,19 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 			<div class="boxes boxes--reverse boxes--paralax">
 				<div class="boxes__box-left  boxes__box-left--paralax"  id="group5">
 					<header class="header-section header-section--area-design header-section--area-web">
-						<p class="header-section__subtitle header-section__subtitle--right header-section__subtitle--txtright">
+						<!-- <p class="header-section__subtitle header-section__subtitle--right header-section__subtitle--txtright">
 						<?php 
 							echo $term_design->description;
 						 ?>
-						</p>
+						</p> -->
+						<div class="bloco-title bloco-title--right">
+			        		<h2 class="title-web">WEB</h2>
+							<p class="subtitle-web">
+								<?php echo $term_design->description; ?>
+							</p>
+						</div>
 						<div class="header-section__box header-section__box--design">
-							<h2 class="header-section__title header-section__title--web">
+							<!-- <h2 class="header-section__title header-section__title--web">
 								<div class="header-section__group header-section__group--we">
 									<span class="header-section__letter">W</span>
 								</div>
@@ -130,19 +140,22 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 								<div class="header-section__group header-section__group--center">
 									<span class="header-section__letter">b</span>
 								</div>
-			        		</h2>
+			        		</h2> -->
+			        		<span class="header-section__title header-section__title--web">
+								<i class="icon-web"></i>
+							</span>
 						</div>
-
+						
 					</header> 
 					
-					<header class="title-servicos">
+					<!-- <header class="title-servicos">
 						<h2>WEB</h2>
 						<p class="subtitle-servicos">
 						<?php 
 							echo $term_design->description;
 						 ?>
 						</p>
-					</header>
+					</header> -->
 					<div class="boxes__layer boxes__layer--deep-right">
 		        		<div class="boxes__bg-phone"></div>
 		      		</div>

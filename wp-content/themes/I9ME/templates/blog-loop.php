@@ -41,10 +41,10 @@
 		<figure class="groupboxes__hover groupboxes__hover--blog">
 			<a href="<?php echo get_permalink(); ?>">
 			<img src="<?php echo $urlThumbnail; ?>" alt="<?php echo get_the_title(); ?>">
-				<figcaption class="groupboxes__legend">
+				<figcaption class="groupboxes__legend groupboxes__legend--blog">
 					<div class="groupboxes__border <?php if( $contador % 2 == 0 ) { echo 'groupboxes__border--right'; } ?>">
 						<h5 class="groupboxes__title"><?php echo get_the_title(); ?></h5>
-							<span class="groupboxes__subtitle"><?php echo get_the_excerpt(); ?></span>
+							<span class="groupboxes__subtitle groupboxes__subtitle--blog"><?php echo get_the_excerpt(); ?></span>
 					</div>
 				</figcaption>
 			</a>

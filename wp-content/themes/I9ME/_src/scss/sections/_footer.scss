@@ -145,8 +145,11 @@
              vertical-align: middle;
          }
 
-
-         @include respond-to(md){
+        @include respond-to(sm){
+            @include span(.35);
+            
+        }
+        @include respond-to(md){
              @include span(.20);
              margin: 7px 0;
          }
@@ -163,8 +166,8 @@
              color: $blue8;
          }
 
-         @include respond-to(md){
-             @include span(.75);
+        @include respond-to(sm){
+            @include span(.70);
                 
                  text-align: right;
                  margin: 20px 0px;

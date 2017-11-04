@@ -145,10 +145,10 @@
 	    }
 	    @include m('design'){
 	    	@include span(.25);
-	    	    min-height: 181px;
-
+	    	    // min-height: 181px;
+				margin: 0;
 	    	@include respond-to(sm){
-	    	    min-height: 211px;
+	    	    // min-height: 211px;
 	    	}
 	    }
 
@@ -287,7 +287,7 @@
 			 		display: none;
 			 	}
 			 	&:after{
-			 		height: 245px$i;
+			 		height: 155px$i;
 			 	}
 			 	@include respond-to(sm){
 			 		@include beforeWhiteRight($brColorWhite: $white);
@@ -303,7 +303,7 @@
 			 		display: none;
 			 	}
 			 	&:after{
-			 		height: 245px$i;
+			 		height: 155px$i;
 			 	}
 				@include respond-to(sm){
 			 		@include beforeGrayRight($brColorGray: $gray1);
