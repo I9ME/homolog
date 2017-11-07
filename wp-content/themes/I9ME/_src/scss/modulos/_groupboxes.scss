@@ -111,7 +111,7 @@
 				@include beforesfourleft($brColor:  $blue4);
 					min-height: 142px;
 					width: 100%;
-					border-width: 2px 2px 2px 0;
+					border-width: 4px 4px 4px 0;
 			    	border-style: solid;
 			    	border-color: $white;
 					display: block;
@@ -122,7 +122,7 @@
 				@include m('right'){
 
 					@include beforesfourright($brColor: $blue4);
-					border-width: 2px 0 2px 2px;
+					border-width: 4px 0 4px 4px;
 					margin-left: 7%;
 					margin-right: 0%;
 					height: auto;
@@ -177,6 +177,9 @@
 				width: 40px;
 				display: inline-block;
 				height: 40px;
+				// @include m('blue'){
+				// 	color: $blue2;
+				// }
 			}
 	}
 }

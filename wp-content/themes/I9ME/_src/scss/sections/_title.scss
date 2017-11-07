@@ -144,7 +144,7 @@
 	    	}
 	    }
 	    @include m('design'){
-	    	@include span(.25);
+	    	@include span(.20);
 	    	    // min-height: 181px;
 				margin: 0;
 	    	@include respond-to(sm){
@@ -287,7 +287,7 @@
 			 		display: none;
 			 	}
 			 	&:after{
-			 		height: 155px$i;
+			 		height: 195px$i;
 			 	}
 			 	@include respond-to(sm){
 			 		@include beforeWhiteRight($brColorWhite: $white);
@@ -303,11 +303,35 @@
 			 		display: none;
 			 	}
 			 	&:after{
-			 		height: 155px$i;
+			 		height: 195px$i;
 			 	}
 				@include respond-to(sm){
-			 		@include beforeGrayRight($brColorGray: $gray1);
-			 		@include afterWhiteRight($brColorWhite: $white);
+			 		
+					 &:before {
+					    border-width: 0 0 0 5px;
+					    border-style: solid;
+					    border-color: $white;
+					    content: "";
+					    display: block;
+					    position: absolute;
+					    top: -25px;
+					    width: 100%;
+					    height: 25px;
+					   
+
+					   }
+					   &:after {
+					     border-color: $blue2;
+					     border-style: solid;
+					     border-width: 0 0 0 5px;
+					     height: 245px;
+					     width: 100%;
+					     display: block;
+					     top: 0;
+					     content: "";
+					     position: absolute;
+					    
+					  }
 			 	}
 			}
 			@include m('resultados'){
@@ -320,8 +344,8 @@
 			 	}
 
 				@include respond-to(sm){
-			 		@include beforeGrayRight($brColorGray: $gray1);
-			 		@include afterWhiteRight($brColorWhite: $white);
+			 		// @include beforeGrayRight($brColorGray: $gray1);
+			 		// @include afterWhiteRight($brColorWhite: $white);
 			 	}
 			}
 			@include m('atendimento'){
@@ -544,6 +568,9 @@
     		@include respond-to(md){
     			text-align: left;
     		}
+    	}
+    	@include m('blue'){
+    		color: $blue2;
     	}
 	}
 

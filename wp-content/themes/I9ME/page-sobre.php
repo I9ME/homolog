@@ -44,21 +44,17 @@
 			<div class="boxes boxes--paralax">
 				<div class="boxes__box-left boxes__box-left--paralax"  id="group7">					
 					<header class="header-section header-section--area-design">
-						<div class="header-section__box header-section__box--design header-section__box--dna">
-							<h2 class="header-section__title header-section__title--design">
-								<div class="header-section__group header-section__group--dna">
-									<span class="icon-dna"></span>
-									<h5>NOSSO</h5>
-								</div>
-								<div class="header-section__group header-section__group--dna">
-									<span class="header-section__letter">D</span>
-									<span class="header-section__letter">n</span>
-									<span class="header-section__letter">a</span>
-								</div>
-			        		</h2>
+						<div class="header-section__box header-section__box--design">
+							<span class="header-section__title header-section__title--design">
+								<i class="icon-dna"></i>
+							</span>
 						</div>
-						<p class="header-section__subtitle header-section__subtitle--right">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.</p>
+						<div class="bloco-title">
+							<span>NOSSO</span>
+			        		<h2 class="title-design">DNA</h2>
+							<p class="subtitle-design">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.						</p>
+						</div>
 					</header>
 					<header class="title-servicos">
 						<h2>DNA</h2>
@@ -140,35 +136,18 @@
 			<div class="boxes boxes--reverse  boxes--paralax">
 				<div class="boxes__box-left boxes__box-left--paralax" id="group6">
 					<header class="header-section header-section--area-design header-section--area-web">
-						<p class="header-section__subtitle header-section__subtitle--right header-section__subtitle--txtright">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.
-						</p>
-						<div class="header-section__box header-section__box--resultados">
-							<h2 class="header-section__title header-section__title--resultados">
-								<div class="header-section__group header-section__group--resultado">
-									<span class="icon-resultados"></span>
-									<h5>NOSSOS</h5>
-								</div>
-								<div class="header-section__group header-section__group--resultado header-section__group--re">
-									<span class="header-section__letter">R</span>
-									<span class="header-section__letter">e</span>
-								</div>
-								<div class="header-section__group header-section__group--resultado">
-									<span class="header-section__letter">s</span>
-									<span class="header-section__letter">u</span>
-									<span class="header-section__letter header-section__letter--l">l</span>
-								</div>
-								<div class="header-section__group header-section__group--resultado">
-									<span class="header-section__letter">t</span>
-									<span class="header-section__letter">a</span>
-								</div>
-								<div class="header-section__group header-section__group--resultado">
-									<span class="header-section__letter">d</span>
-									<span class="header-section__letter">o</span>
-									<span class="header-section__letter">s</span>		
-								</div>								
-			        		</h2>
+						<div class="bloco-title bloco-title--right">
+							<span>NOSSOS</span>
+			        		<h2 class="title-web">RESULTADOS</h2>
+							<p class="subtitle-web">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.							</p>
 						</div>
+						<div class="header-section__box header-section__box--design">
+			        		<span class="header-section__title header-section__title--web">
+								<i class="icon-resultados"></i>
+							</span>
+						</div>
+						
 					</header>
 					<header class="title-servicos">
 						<h2>RESULTADOS</h2>

@@ -280,39 +280,39 @@ $break-large: 1400px;
    }
 }
 //mixin para before branco direito do titulo.
-@mixin beforeGrayRight( $Width: 100%, $brColorGray: $gray1){
+// @mixin beforeGrayRight( $Width: 100%, $brColorWhite: $white){
 
- &:before {
-    border-width: 0 0 0 5px;
-    border-style: solid;
-    border-color: $gray1;
-    content: "";
-    display: block;
-    position: absolute;
-    top: -25px;
-    width: $Width;
-    height: 25px;
+//  &:before {
+//     border-width: 0 0 0 5px;
+//     border-style: solid;
+//     border-color: $white;
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: -25px;
+//     width: $Width;
+//     height: 25px;
    
 
-   }
-}
+//    }
+// }
 //mixin para after azul direito do titulo.
-@mixin afterWhiteRight( $Width: 100%, $brColorWhite: $white){
+// @mixin afterWhiteRight( $Width: 100%, $brColorWhite: $white){
 
-  &:after {
-     border-color: $white;
-     border-style: solid;
-     border-width: 0 0 0 5px;
-     height: 245px;
-     width: 100%;
-     display: block;
-     top: 0;
-     content: "";
-     position: absolute;
+//   &:after {
+//      border-color: $white;
+//      border-style: solid;
+//      border-width: 0 0 0 5px;
+//      height: 245px;
+//      width: 100%;
+//      display: block;
+//      top: 0;
+//      content: "";
+//      position: absolute;
     
-  }
+//   }
 
-}
+// }
 
 //mixin para after azul direito do titulo.
 @mixin afterBlueRight( $Width: 100%, $brColorBlue: $blue2){
@@ -354,7 +354,7 @@ $break-large: 1400px;
 //mixin para before de titulos 4.
 @mixin beforesfourleft( $Width: 232px, $brColor: $blue2){
   &:before {
-    border-width: 2px 0 2px 2px;
+    border-width: 4px 0 4px 4px;
     border-style: solid;
     border-color: $blue2!important;
     content: "";
@@ -364,7 +364,7 @@ $break-large: 1400px;
     margin-left: auto;
     //padding: 58px 0!important;
     position: absolute;
-    top: -2px!important;
+    top: -4px!important;
     width: 54px;
     height: 142px$i;
 
@@ -375,7 +375,7 @@ $break-large: 1400px;
 //mixin para before de titulos 4.
 @mixin beforesfourright( $Width: 232px, $brColor: $blue2){
   &:before {
-    border-width: 2px 2px 2px 0;
+    border-width: 4px 4px 4px 0;
     content: "";
     right: -54px!important;
     left: inherit$i;

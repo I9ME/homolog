@@ -43,7 +43,7 @@
 
       @include respond-to(sm){
         @include span(1);
-        margin-bottom: 60px;
+        //margin-bottom: 60px;
       }
       @include respond-to(md){
         @include span(.5);
