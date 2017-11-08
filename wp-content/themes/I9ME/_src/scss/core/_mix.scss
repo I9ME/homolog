@@ -359,13 +359,13 @@ $break-large: 1400px;
     border-color: $blue2!important;
     content: "";
     display: block;
-    left: -54px!important;
+    left: -34px!important;
     margin-right: auto;
     margin-left: auto;
     //padding: 58px 0!important;
     position: absolute;
     top: -4px!important;
-    width: 54px;
+    width: 35px;
     height: 142px$i;
 
    }
@@ -377,7 +377,7 @@ $break-large: 1400px;
   &:before {
     border-width: 4px 4px 4px 0;
     content: "";
-    right: -54px!important;
+    right: -35px!important;
     left: inherit$i;
     height: 142px$i;
 

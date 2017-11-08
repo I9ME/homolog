@@ -5,6 +5,7 @@
 	background: #145c96;
   	position: relative;
 	background-repeat: no-repeat;
+	background-position: center;
 	height: 300px;
 	@include respond-to(sm){
 		height: 420px;
@@ -18,13 +19,16 @@
         	padding: 0 15px;
 
         	@include respond-to(sm){
-        		bottom: 100px;
+        		bottom: 50px;
         	}
     }
 	@include e('title'){
 		color: $white;
 		text-align: center;
-
+		font-size: 35px;
+		 @include respond-to(sm){
+		 	font-size: 45px;
+		 }
 		&:after{
 			content: "";
 		    border-bottom: 5px solid #054c7f;
@@ -42,6 +46,10 @@
 	    margin: 0 auto;
 	    font-size: 16px;
 	    margin-bottom: 30px;
+	    display: none;
+	    @include respond-to(sm){
+	    	display: block;
+	    }
 	}
 
 }

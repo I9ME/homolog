@@ -41,18 +41,30 @@
 		//@include span(1);
 		position: relative;
 		@extend %boxFull;
-		background: #fefdfd;
+		background: $white;
 		//display: inline-block;
 		//height: 670px;
 		// background-image: url(../images/bg_lapis.png);
 		// background-repeat: no-repeat;
 		// background-attachment: fixed;
-		// background-position: 34% 46%;
+		//     background-position: 10% 66%;
 		//min-height: 899px;
 		//background-position: 10% 27%;
 			
 		@include respond-to(sm){
 			min-height: 726px;
+			// position: relative;
+	  //     &:before{
+	  //       content: '';
+	  //       position: absolute;
+	  //       margin: 0;
+	  //       background: url(../images/lapis-box.png)no-repeat;
+	  //       height: 46%;
+	  //       width: 100%;
+	  //       bottom: 0;
+
+	   
+	  //     }
 		}
 
 		&:after{
@@ -80,6 +92,7 @@
     		padding-bottom: 0px;
     		//min-height: 760px;
     		min-height: 726px;
+    		
     	}
 
 	}
@@ -304,13 +317,15 @@
 	letter-spacing: 3px;
 	color: $black;
 	max-width: 350px;
-	font-weight: 600;
+	font-weight: 500;
+	font-size: 18px;
 }
 .subtitle-web{
 	float: right;
 }
 .icon-web{
 	background: url(../images/icon-web.png)no-repeat;
+	background-position: right;
 	height: 91px;
 	width: 93px;
 	display: inline-block;
@@ -319,6 +334,7 @@
 }
 .icon-design{
 	background: url(../images/icon-design.png)no-repeat;
+	background-position: left;
 	height: 91px;
 	width: 85px;
 	display: inline-block;

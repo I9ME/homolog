@@ -21,7 +21,7 @@
 	 @include e('boxitem'){
 		@include span(1);
 			position: relative;
-			background: #005193;
+			background: #1172c0;
 			@include respond-to(sm){
 				@include span(.5);
 			}
@@ -78,7 +78,7 @@
     		padding: 10px;
     		width: 91%;
 		@include respond-to(sm){
-    		background-color: rgba(0, 13, 51, 0.25);
+    		background-color: rgba(0,13,51,.5);
 		    bottom: 0;
 		    padding: 0;
 		    top: 0;
@@ -130,17 +130,55 @@
 					
 				}
 			}
+			@include m('blog'){
+				&:before {
+			    border-width: 4px 0 4px 4px;
+			    border-style: solid;
+			    border-color: $blue2!important;
+			    content: "";
+			    display: block;
+			    left: -34px!important;
+			    margin-right: auto;
+			    margin-left: auto;
+			    //padding: 58px 0!important;
+			    position: absolute;
+			    top: -4px!important;
+			    width: 35px;
+			    height: 158px$i;
+
+   				}
+					min-height: 158px$i;
+					width: 100%;
+					border-width: 4px 4px 4px 0;
+			    	border-style: solid;
+			    	border-color: $white;
+					display: block;
+					padding: 30px; 
+					position: relative;
+					margin-right: 7%;
+
+					// @include m('right'){
+
+					// @include beforesfourright($brColor: $blue4);
+					// border-width: 4px 0 4px 4px;
+					// margin-left: 7%;
+					// margin-right: 0%;
+					// height: auto;
+
+					
+					// }
+			}
 	}
 
 	@include e('title'){
-		@include fonts(600,20);
+		@include fonts(600,30);
 		margin: 0;
 		color: $white;
 		text-transform: uppercase;
 
 	}
 	@include e('subtitle'){
-		@include fonts(400,16);
+		@include fonts(400,20);
 		margin: 0;
 		color: $white;
 		
@@ -180,6 +218,14 @@
 				// @include m('blue'){
 				// 	color: $blue2;
 				// }
+
+				&:hover{
+					background: url(../images/btn-plus-hover.png);
+					width: 40px;
+					display: inline-block;
+					height: 40px;
+					transition: all .4s ease;
+				}
 			}
 	}
 }

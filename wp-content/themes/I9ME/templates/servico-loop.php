@@ -36,12 +36,13 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 						 ?>
 						</p>
 					</header> 
-					<div class="boxes__layer boxes__layer--deep-right">
+					<figure class="box__smarthphone"></figure>
+					<!-- <div class="boxes__layer boxes__layer--deep-right">
 		        		<div class="boxes__bg-phone"></div>
 		      		</div>
 			      	<div class="boxes__layer boxes__layer--back-right">
 			        	<div class="boxes__phone"></div>
-			      	</div>
+			      	</div> -->
 
 					
 				</div>
@@ -119,8 +120,10 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 						echo $term_design->description;
 					 ?>
 					</p>
-				</header>    
-				<div class="boxes__layer boxes__layer--base">
+				</header>  
+				<figure class="box__lapis"></figure>  
+				
+				<!-- <div class="boxes__layer boxes__layer--base">
 		        	<div class="boxes__bg-lapis"></div>
 		      	</div>
 		      	<div class="boxes__layer boxes__layer--back">
@@ -128,7 +131,7 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 		      	</div>
 		      	<div class="boxes__layer boxes__layer--deep">
 		        	<div class="boxes__sombra"></div>
-		      	</div>
+		      	</div> -->
 			</div>
 
 			<div class="boxes__box-right">

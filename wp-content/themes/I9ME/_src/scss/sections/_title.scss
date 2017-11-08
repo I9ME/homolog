@@ -57,73 +57,7 @@
     	}
 
  	}
-    // @include m('area-design-interna'){
-    // 	top: -551px;
-    // 	@include respond-to(sm){
-    // 		top: initial;
-    // 	}
-    // }
-// 	@include m('3'){
-// 			margin: 0;
-// 			display: none;
-// 			float: right$i;
-// 			@include respond-to(md){
-// 				display: block;
-// 			}
-			
-// 	}
-//@include e('border'){
- 		
-// 		    top: 0;
-// 			width: 27%;
-// 			padding: 30px;
 
-// 			@include m('white'){
-// 				@include befores($brColor: $blue2, $isCenter: true);
-				
-// 					border-color: $white;
-// 				    border-style: solid;
-// 				    border-width: 0 4px 4px 4px;
-// 				    //display: block;
-// 				    margin: 0 auto 30px;
-// 				    min-height: 94px;
-// 				    position: relative;
-// 				    top: 0;
-// 					//max-width: 232px;
-// 			}
-// 			@include m('white-home'){
-// 				@include befores($brColor: $blue2, $isCenter: true);
-				
-// 					border-color: $white;
-// 				    border-style: solid;
-// 				    border-width: 0 4px 4px 4px;
-// 				    display: block;
-// 				    margin: 0 auto 30px;
-// 				    min-height: 94px;
-// 				    position: relative;
-// 				    top: -15px;
-// 					//max-width: 232px;
-// 			}
-
-// 			@include m('2'){
-// 				margin: 0$i;
-// 				border: 0$i;
-// 				@include respond-to(md){
-// 					border-left: 4px solid $white$i;
-// 				}
-// 			}
-// 			@include m('3'){
-// 				@include span(1);
-					
-
-// 				@include respond-to(md){
-// 					height: 160px$i;
-// 					max-width:90px$i;
-// 				}
-// 			}
-
-
-//}
 
  	@include e('box'){
  		@include span(1);
@@ -149,6 +83,7 @@
 				margin: 0;
 	    	@include respond-to(sm){
 	    	    // min-height: 211px;
+	    	    @include span(.26);
 	    	}
 	    }
 
@@ -498,7 +433,8 @@
     	font-size: 13px;
     	max-width: 600px;
     	@include respond-to(sm){
-    		font-size: 16px;
+    		font-size: 18px;
+    		font-weight: 500;
     	}
 
     	@include m('right'){

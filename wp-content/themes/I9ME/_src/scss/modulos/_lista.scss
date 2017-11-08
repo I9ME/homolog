@@ -115,6 +115,7 @@
 			display: block;
 		}
 		@include respond-to(md){
+			@include fonts(300,16);
 			text-transform: normal;
 
 		}
