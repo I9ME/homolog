@@ -74,11 +74,11 @@
 		    position: absolute;
     		top: 210px;
     		left: 12px;
-    		background: rgba(0, 0, 0, 0.15);
+    		background: rgba(0,13,51,0.92);
     		padding: 10px;
     		width: 91%;
 		@include respond-to(sm){
-    		background-color: rgba(0,13,51,.5);
+    		background-color: rgba(0,13,51,0.92);
 		    bottom: 0;
 		    padding: 0;
 		    top: 0;
@@ -122,14 +122,33 @@
 				@include m('right'){
 
 					@include beforesfourright($brColor: $blue4);
+					border-width: 4px 0 4px 4px$i;
+					margin-left: 7%;
+					margin-right: 0%$i;
+					height: auto;
+					margin-left: 7%;
+    
+
+					
+				}
+			}
+				@include m('blog-right'){
+
+					//@include beforesfourright($brColor: $blue4);
 					border-width: 4px 0 4px 4px;
 					margin-left: 7%;
 					margin-right: 0%;
 					height: auto;
 
+					&:before{
+						content: '';
+						border-width: 4px 4px 4px 0px$i;
+						left: 0;
+						right: -35px;
+					}
+
 					
 				}
-			}
 			@include m('blog'){
 				&:before {
 			    border-width: 4px 0 4px 4px;
@@ -137,7 +156,7 @@
 			    border-color: $blue2!important;
 			    content: "";
 			    display: block;
-			    left: -34px!important;
+			    left: -34px;
 			    margin-right: auto;
 			    margin-left: auto;
 			    //padding: 58px 0!important;
@@ -171,17 +190,18 @@
 	}
 
 	@include e('title'){
-		@include fonts(600,30);
+		@include fonts(700,25);
 		margin: 0;
 		color: $white;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 
 	}
 	@include e('subtitle'){
-		@include fonts(400,20);
+		@include fonts(500,20);
 		margin: 0;
 		color: $white;
-		
+		letter-spacing: 1px;
 		@include m('blog'){
 			display: none;
 			@include respond-to(sm){

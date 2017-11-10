@@ -11,7 +11,7 @@
 	if ( $miniatura ) {	
 		//Imagem Destacada	
 		$urlThumbnail = $miniatura;
-		$bg_banner_single = 'style="background:url(' . $urlThumbnail . '); background-size: cover;"';
+		$bg_banner_single = 'style="background-image:url(' . $urlThumbnail . '); background-size: cover;"';
 	} else {
 		$urlThumbnail	= '';
 		$bg_banner_single = '';

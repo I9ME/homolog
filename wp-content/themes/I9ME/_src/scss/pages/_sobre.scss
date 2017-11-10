@@ -203,13 +203,13 @@
 #equipe{
   margin-top: -80px;
   @include respond-to(md){
-    margin-top: -120px;
+    margin-top: -200px;
   }
   .owl-controls{
     margin: 20px 0;
 
     @include respond-to(md){
-      margin: 60px 0;
+      margin: 45px 0 0;
     }
   }
 }

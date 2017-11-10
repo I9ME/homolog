@@ -17,7 +17,7 @@
 			$urlThumbnail = wp_get_attachment_image_src($image_id, $sizeThumbs);
 			$urlThumbnail = $urlThumbnail[0];
 
-			$bg_banner_single = 'style="background:url(' . $urlThumbnail . '); background-size: cover;"';
+			$bg_banner_single = 'style="background-image:url(' . $urlThumbnail . '); background-size: cover;"';
 
 		} else {
 			$urlThumbnail	= '';

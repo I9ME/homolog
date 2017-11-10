@@ -58,9 +58,9 @@
 					</div>
 				</li>
 			</ul>
-			<div class="groupboxes__vermais groupboxes__vermais--servicos">
-				<a href="<?php echo home_url(); ?>/servicos/#web" class="btn-plus"></a>
-			</div>
+			<!-- <div class="groupboxes__vermais groupboxes__vermais--servicos">
+				<a href="<?php //echo home_url(); ?>/servicos/#web" class="btn-plus"></a>
+			</div> -->
 		</div>
 	</section>
 

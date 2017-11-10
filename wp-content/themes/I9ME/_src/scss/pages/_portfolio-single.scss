@@ -31,7 +31,7 @@
 		@include fonts(500,16);
 		color: $white;
 	    margin-top: 0;
-	    margin-bottom: 10px;
+	    margin-bottom: 25px;
 	    letter-spacing: 2px;
 	 	word-spacing: 3px; 	
 	 	a{
@@ -256,6 +256,7 @@
 	}
 	@include e('header-btn'){
 		@include span(1);
+		margin-bottom: 50px;
 		a{
 			@include fonts(500,16);
 			color: #005193;
