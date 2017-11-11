@@ -207,6 +207,7 @@
     }
     @include respond-to(md){
       opacity: 1;
+      
     }
   }
   @include e('lapis'){

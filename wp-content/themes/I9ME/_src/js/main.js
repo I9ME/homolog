@@ -230,8 +230,10 @@ $("#depoimentos").owlCarousel({
   dots: true,
   navText: false,
   margin: 50,
-  // animateOut: 'fadeOut',
-  // animateIn: 'fadeIn'
+  loop: true,
+  autoplay:true,
+  autoplayTimeout:2600,
+  autoplayHoverPause:true,
   responsive: {
     0: {
       items: 1
@@ -240,7 +242,8 @@ $("#depoimentos").owlCarousel({
       items: 2
     },
     1000: {
-      items: 2
+      items: 2,
+       dots: false
     }
   }
 });

@@ -62,7 +62,7 @@
         	<a href="<?php echo get_permalink(); ?>">
 				<figure class="groupboxes__hover <?php if( $contador % 2 == 0 ) { echo 'color-b'; } ?>">
 					<img src="<?php echo $urlThumbnail; ?>" alt="<?php echo get_the_title(); ?>">
-						<figcaption class="groupboxes__legend">
+						<figcaption class="groupboxes__legend wow flipInX"  data-wow-duration="2s" data-wow-delay="0.1s">
 							<div class="groupboxes__border <?php if( $contador % 2 == 0 ) { echo 'groupboxes__border--right'; } ?>">
 								<h5 class="groupboxes__title"><?php echo  $customer_post->post_title; ?></h5>
 								<span class="groupboxes__subtitle"><?php echo $service_post->post_title; ?></span>

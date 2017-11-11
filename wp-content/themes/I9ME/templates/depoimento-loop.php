@@ -62,7 +62,7 @@ $customer_link = get_permalink( $customer_id );
     <div class="item">
     	<div class="depoimentos__item">
 
-	    	<div class="depoimentos__boxleft">
+	    	<div class="depoimentos__boxleft wow flipInY">
 	    		<div class="depoimentos__img-cicle">
 	    			<img src="<?php echo $urlThumbnail; ?>" alt="<?php echo get_the_title(); ?>">
 	    		</div>
@@ -73,7 +73,7 @@ $customer_link = get_permalink( $customer_id );
 	    			</a>
 	    		</span>
 	    	</div>
-	    	<div class="depoimentos__boxright">
+	    	<div class="depoimentos__boxright wow flipInY">
 	    		<div class="depoimentos__border">
 	    			<p class="depoimentos__info"><?php echo $resumo; ?></p>
 	    		</div>

@@ -7,16 +7,16 @@
 	<div class="container">
 		<header class="header-section">
 			<div class="header-section__box">
-				<h2 class="header-section__title">Portfólio</h2>
+				<h2 class="header-section__title wow fadeInUp"  data-wow-duration="0.8s" data-wow-delay="0s">Portfólio</h2>
 			</div>
-			<p class="header-section__subtitle">
+			<p class="header-section__subtitle wow fadeInUp"  data-wow-duration="0.8s" data-wow-delay="0.99s">
 				<?php echo $resumoSection; ?>	 	
 			</p>
 		</header>
 		<div class="containerowl groupboxes">
 			<?php get_template_part('templates/portfolio','loop');?>
 		</div>
-		<div class="groupboxes__vermais">
+		<div class="groupboxes__vermais wow rotateIn">
 			<a href="<?php echo home_url() ?>/portfolios/" class="btn-plus">
 			</a>
 		</div>

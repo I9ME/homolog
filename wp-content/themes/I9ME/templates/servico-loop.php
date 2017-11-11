@@ -13,15 +13,15 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 	<section class="servicos__web" id="web">
 		<div class="container">
 			<div class="boxes boxes--reverse boxes--paralax">
-				<div class="boxes__box-left  boxes__box-left--paralax"  id="group5">
+				<div class="boxes__box-left  boxes__box-left--paralax wow fadeInUp" data-wow-duration="1" data-wow-delay="1s" id="group5">
 					<header class="header-section header-section--area-design header-section--area-web">
-						<div class="bloco-title bloco-title--right">
-			        		<h2 class="title-web">WEB</h2>
+						<div class="bloco-title bloco-title--right  wow fadeInLeft">
+			        		<h2 class="title-web  ">WEB</h2>
 							<p class="subtitle-web">
 								<?php echo $term_design->description; ?>
 							</p>
 						</div>
-						<div class="header-section__box header-section__box--design">
+						<div class="header-section__box header-section__box--design wow fadeInDown">
 			        		<span class="header-section__title header-section__title--web">
 								<i class="icon-web"></i>
 							</span>
@@ -70,7 +70,7 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 						<li class="lista__item">
 							<figure>
 								<a href="<?php echo get_permalink(); ?>">
-									<div class="lista__bordas lista__bordas--white">
+									<div class="lista__bordas lista__bordas--white wow zoomIn" data-wow-duration="1" data-wow-delay="1s">
 											<i class="lista__<?php echo $slug; ?>">
 												<img class="icon" src="<?php echo $icone; ?>" alt="<?php echo the_title(); ?>" />
 												<img class="icon-hover" src="<?php echo $icone_hover; ?>" alt="<?php echo the_title(); ?>" />
@@ -85,7 +85,7 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 						</li>
 						<?php endwhile; ?>
 						<?php if( is_home() || is_front_page() ): ?>
-							<div class="groupboxes__vermais groupboxes__vermais--servicos">
+							<div class="groupboxes__vermais groupboxes__vermais--servicos wow rotateIn" data-wow-duration="1" data-wow-delay="1s">
 								<a href="<?php echo home_url(); ?>/servicos/#web" class="btn-plus"></a>
 							</div>
 						<?php endif; ?>
@@ -99,14 +99,14 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 	<div class="container">
 		<div class="boxes boxes--paralax">
 
-			<div class="boxes__box-left boxes__box-left--paralax"  id="group4">
+			<div class="boxes__box-left boxes__box-left--paralax wow fadeInUp" data-wow-duration="1" data-wow-delay="1s" id="group4">
 				<header class="header-section header-section--area-design">
-					<div class="header-section__box header-section__box--design">
-						<span class="header-section__title header-section__title--design">
+					<div class="header-section__box header-section__box--design wow fadeInDown">
+						<span class="header-section__title header-section__title--design"  data-wow-duration="2s" data-wow-delay="0.1s">
 							<i class="icon-design"></i>
 						</span>
 					</div>
-					<div class="bloco-title">
+					<div class="bloco-title wow fadeInRight">
 		        		<h2 class="title-design">DESIGN</h2>
 						<p class="subtitle-design">
 							<?php echo $term_design->description; ?>
@@ -159,7 +159,7 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 					<li class="lista__item">
 						<figure>
 							<a href="<?php echo get_permalink(); ?>">
-								<div class="lista__bordas">
+								<div class="lista__bordas wow zoomIn" data-wow-duration="1" data-wow-delay="1s">
 										<!-- Colocar um BG na tag <i> utilizando a classe correspondente ao icone-->
 										<i class="servicos__<?php echo $slug; ?>">
 											<img class="icon" src="<?php echo $icone; ?>" alt="<?php echo the_title(); ?>" />
@@ -175,7 +175,7 @@ $term_web = get_term_by('name', 'web', 'tipo-de-servico');
 					</li>
 					 <?php endwhile; ?> 
 					 <?php if( is_home() || is_front_page() ): ?>
-						<div class="groupboxes__vermais groupboxes__vermais--servicos">
+						<div class="groupboxes__vermais groupboxes__vermais--servicos wow rotateIn" data-wow-duration="1" data-wow-delay="1s">
 							<a href="<?php echo home_url(); ?>/servicos/#design" class="btn-plus"></a>
 						</div>
 					<?php endif; ?>

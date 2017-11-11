@@ -1,4 +1,4 @@
-<section class="atendimento" id="atendimentos">
+<section class="atendimento wow fadeInUp" id="atendimentos">
 	<div class="container">
 		<header class="header-section">
 			<div class="header-section__box header-section__box--before-blue">
@@ -11,7 +11,7 @@
 		</header>
 
 		
-		<div class="atendimento__boxform">
+		<div class="atendimento__boxform wow zoomIn">
 			<address class="atendimento__groupend">
 				<div class="atendimento__group">
 					<div class="atendimento__contato">
