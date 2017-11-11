@@ -43,11 +43,31 @@
       }
     }
     @include m('footer'){
-      @include span(.25);
-
+      @include span(1);
+      @include respond-to(sm){
+        @include span(.25);
+      }
       @include e('name',$self){
-        @include span(.67);
+        @include span(1);
+          text-align: center;
+          margin-top: 20px;
+        @include respond-to(sm){
+          @include span(.67);
+          text-align: center;
+          margin-top: 0;
+        }
         display: inline-block;
+      }
+
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @include respond-to(sm){
+          display: inherit;
+        }
       }
     }
   }

@@ -547,3 +547,40 @@
  		display: none;
  	}
 }
+
+
+.title-atendimento-mobile{
+	$self : &;
+ 	@extend %boxFull;
+ 	text-align: center;
+ 	margin: 60px 0;
+ 	@include respond-to(sm){
+ 		margin: 60px 0 0;
+ 	}
+ 	@include respond-to(md){
+ 		display: none;
+ 	}
+ 	span{
+ 		color: #ccc;
+ 		font-size: 20px;
+ 	}
+ 	h2{
+ 		color: #007cdb;
+ 		font-size: 33px;
+    	margin: 0;
+    	letter-spacing: 3px;
+ 	}
+}
+.subtitle-atendimento-mobile{
+	@extend %boxFull;
+	letter-spacing: 3px;
+	text-align:center;
+	@include respond-to(sm){
+		font-size: 16px;
+	}
+	font-size: 13px;
+	@include respond-to(md){
+ 		display: none;
+ 	}
+}
+

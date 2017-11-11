@@ -1,4 +1,4 @@
-<section class="banner wow zoomIn">
+<section class="banner">
 
     <video autoplay loop id="video-background" class="banner__video" poster="" muted>
       <source src="wp-content/themes/I9ME/assets/videos/webdesign.mp4" type="video/mp4" height="100%" width="100%">
