@@ -15,17 +15,7 @@
       @include respond-to(md){
         padding: 0px;
       }
-		 	&:after{
-		 		content: "";
-			    position: relative;
-			    bottom: -46px;
-    			left: -239px;
-			    height: 16px;
-			    background: url(../images/before-active.png) no-repeat;
-			    max-width: 30px;
-			    display: block;
-			    margin: 0 auto;
-		 	}
+		 
 		}
 
 		 @include e('lista'){
@@ -47,7 +37,14 @@
           width: 24%;
           margin: 30px 0;
           //margin-bottom: 20px;
-
+           // .active{
+   
+    
+           //      background: url(../images/before-active.png) no-repeat;
+               
+               
+                
+           //   }
          }
         //  @include respond-to(md){
 		 	 	  // width: 32%;
@@ -420,6 +417,3 @@
    	 	// }
 }
 
-// .active{
-
-// }

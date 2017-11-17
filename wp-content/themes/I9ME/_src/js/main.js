@@ -40,7 +40,10 @@ jQuery(function($) {
 
     $('.header .banner  .banner__layer').css({'height' : alturaTela+'vh'}); 
 
-
+    $('.criacao__lista li').click(function(){
+      $('.criacao__lista li').removeClass("active");
+      $(this).addClass("active");
+    });
 // jQuery(document).ready(function($) {
     
 //     /* Every time the window is scrolled ... */
