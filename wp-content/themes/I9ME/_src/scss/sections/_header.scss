@@ -54,7 +54,7 @@
         @include respond-to(sm){
           @include span(.67);
           text-align: center;
-          margin-top: 0;
+          margin-top: 15px;
         }
         display: inline-block;
       }
@@ -154,6 +154,10 @@
 
             @include respond-to(md){
               @include fonts(500,18);
+              &:hover{
+                color: #00a5dc;
+                transition: all 0.4s ease;
+              }
             }
         }
       }

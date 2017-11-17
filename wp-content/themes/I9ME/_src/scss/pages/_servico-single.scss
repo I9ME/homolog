@@ -12,13 +12,16 @@
       @include respond-to(sm){
 		 	  padding: 30px 0px;
       }
+      @include respond-to(md){
+        padding: 0px;
+      }
 		 	&:after{
 		 		content: "";
 			    position: relative;
 			    bottom: -46px;
     			left: -239px;
 			    height: 16px;
-			    background: url(../images/after-lista.png) no-repeat;
+			    background: url(../images/before-active.png) no-repeat;
 			    max-width: 30px;
 			    display: block;
 			    margin: 0 auto;
@@ -29,6 +32,7 @@
 		 	
 		 	margin: 0 auto;
 		 	width: 100%;
+
 		 	@include respond-to(md){
 		    	max-width: 50%;
 			}
@@ -41,7 +45,7 @@
           width:23%;
         @include respond-to(sm){
           width: 24%;
-          margin-bottom: 0px;
+          margin: 30px 0;
           //margin-bottom: 20px;
 
          }
@@ -416,3 +420,6 @@
    	 	// }
 }
 
+// .active{
+
+// }

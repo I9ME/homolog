@@ -88,6 +88,18 @@
 		position: relative;
 		background-color: $gray1;
 		padding-bottom: 40px;
+
+		&:before{
+			content: '';
+			position: absolute;
+			background: url(../images/before-web.png)no-repeat 50%;
+			height: 16px;
+		    display: block;
+		    margin: 0 auto;
+		    z-index: 999999999;
+		    width: 100%;
+		    max-width: 100%;
+		}
     	@include respond-to(sm){
     		padding-bottom: 0px;
     		//min-height: 760px;
@@ -336,7 +348,7 @@
 	background: url(../images/icon-design.png)no-repeat;
 	background-position: left;
 	height: 91px;
-	width: 85px;
+	width: 92px;
 	display: inline-block;
 	margin: 70px 0;
 	float: left;

@@ -15,7 +15,7 @@
 		</div>
 		<div class="container">
 			<ul class="equipe__lista" id="equipe">
-				<li class="equipe__item wow flipInY">
+				<li class="equipe__item">
 					<div class="equipe__profissional"></div>
 					<div class="equipe__box-nome">
 						<i class="icon-"></i><h3>Nome do Profissional</h3>
@@ -29,7 +29,7 @@
 						<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
 					</div>		
 				</li>
-				<li class="equipe__item wow flipInY">
+				<li class="equipe__item">
 					<div class="equipe__profissional"></div>
 					<div class="equipe__box-nome">
 						<i class="icon-"></i><h3>Nome do Profissional</h3>
@@ -43,7 +43,7 @@
 						<a href="#" title="Behance"><i class="icone fa fa-behance"></i></a>
 					</div>
 				</li>
-				<li class="equipe__item wow flipInY">
+				<li class="equipe__item">
 					<div class="equipe__profissional"></div>
 					<div class="equipe__box-nome">
 						<i class="icon-"></i><h3>Nome do Profissional</h3>
