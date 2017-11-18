@@ -14,7 +14,7 @@
 
  ?>
 
-<ul class="groupboxes groupboxes--blog" id="blog">
+<ul class="blog-boxe" id="blog">
 	<?php $loop = new WP_Query( $args );
 		
 		$contador = 1; //Iniciado em um para exibir um na primeira iteração
@@ -37,11 +37,11 @@
 			}
 
     ?>	
-     <li class="groupboxes__boxitem">
-		<figure class="groupboxes__hover groupboxes__hover--blog">
+     <li class="blog-boxe__item">
+		<figure class="blog-boxe__figure">
 			<a href="<?php echo get_permalink(); ?>">
 			<img src="<?php echo $urlThumbnail; ?>" alt="<?php echo get_the_title(); ?>">
-				<figcaption class="groupboxes__legend groupboxes__legend--blog">
+				<figcaption class="blog-boxe__legend">
 					<div class="groupboxes__border groupboxes__border--blog <?php if( $contador % 2 == 0 ) { echo 'groupboxes__border--right groupboxes__border--blog-right'; } ?>">
 						<h5 class="groupboxes__title"><?php echo get_the_title(); ?></h5>
 							<span class="groupboxes__subtitle groupboxes__subtitle--blog"><?php echo get_the_excerpt(); ?></span>

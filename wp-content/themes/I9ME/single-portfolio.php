@@ -135,21 +135,23 @@
 		<div class="container">
 			<div class="page-portfolio__info-left">
 				<h4 class="page-portfolio__title"><?php echo $bloco1_titulo; ?></h4>
-				<p class="page-portfolio__subtitle">
+				<div class="page-portfolio__subtitle">
 					<strong>Cliente: <a href="<?php echo $customer_link; ?>"><?php echo  $customer_post->post_title; ?></a></strong>
-				</p>
-				<p>	
-					<?php echo $bloco1_conteudo; ?>
-				</p>
+					
+					<p>
+						<?php echo $bloco1_conteudo; ?>
+					</p>
+				</div>
 			</div>
 			<div class="page-portfolio__info-right">
 				<h4 class="page-portfolio__title"><?php echo $bloco2_titulo; ?></h4>
-				<p class="page-portfolio__subtitle">
+				<div class="page-portfolio__subtitle">
 					<strong>Serviço: <a href="<?php echo $service_link; ?>"><?php echo  $service_post->post_title; ?></a></strong>
-				</p>
+				
 				<p>	
 					<?php echo $bloco2_conteudo; ?>
 				</p>
+				</div>
 			</div>			
 		</div>
 	</section>

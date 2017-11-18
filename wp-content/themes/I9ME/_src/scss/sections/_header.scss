@@ -101,7 +101,7 @@
     text-align: center;
     color: $white;
     letter-spacing: 5px;
-
+    margin-top: 3px;
 
     @include respond-to(sm){
       display: none;
@@ -243,9 +243,11 @@
         background: #fff;
         li{
         margin: 20px 0;
+        text-align: left;
+        padding-left: 10%;
           a{
           color: #003793;
-          @include fonts(700,15);
+          @include fonts(700,28);
           }
         }
       }

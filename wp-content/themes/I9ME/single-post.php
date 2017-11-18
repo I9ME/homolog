@@ -64,7 +64,7 @@
 							<tfoot>
 								<tr>
 									<td colspan="3">
-										<table  cellspacing="0" cellpadding="0" width="100%" border="0" class="">
+										<table  cellspacing="0" cellpadding="0" width="100%" border="0" class="table-category">
 											<tr>
 												<td class="category category-tfoot">
 													<h5>CATEGORIA(S)</h5>
