@@ -2,7 +2,7 @@
 <?php get_template_part('templates/html','slider');?>
 <?php get_template_part('templates/portfolio','home');?>
 <?php get_template_part('templates/servicos','home');?>
-<?php get_template_part('templates/sobre','home');?>
+<?php get_template_part('templates/clientes','home');?>
 <?php get_template_part('templates/blog','home');?>
 <?php get_template_part('templates/atendimento','home');?>
 <?php get_template_part('templates/depoimentos','home');?>

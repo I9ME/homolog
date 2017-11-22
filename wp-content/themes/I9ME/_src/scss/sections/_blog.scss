@@ -2,7 +2,14 @@
 	@extend %boxFull;
 		position: relative;
 		background: #fff;
-		
+	
+	@include e('conteudo'){
+		@extend %boxFull;
+
+		img{
+    		object-fit: inherit$i;
+		}
+	}
 }
 .blog-boxe{
 	$self : &;
@@ -12,7 +19,7 @@
 		list-style: none;
 		@include respond-to(sm){
 		    margin-top: 30px;
-		    margin-bottom: 0;
+		    margin-bottom: 60px;
 			//margin: 0 0 60px;
 			//padding: 0 90px$i;
 		}

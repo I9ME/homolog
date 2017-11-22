@@ -3,5 +3,7 @@
 	@extend %boxFull;	
 	position: relative;
 	
-	
+	@include e('conteudo'){
+		@extend %boxFull;	
+	}
 }

@@ -8,7 +8,7 @@
 	$self : &;
 	@extend %boxFull;
 	position: relative;
-  min-height: 760px;
+  //min-height: 760px;
 
 }
 .resultados{
@@ -16,7 +16,7 @@
   @extend %boxFull;
   background: #eaeaea;
   position: relative;
-  min-height: 867px;
+  //min-height: 867px;
   z-index: -1;
 
 }
@@ -25,6 +25,8 @@
    $self : &;
   @extend %boxFull;
   background: #005193;
+  position: relative;
+  z-index:999999;
 
   @include e('carousel'){
     @extend %boxFull;

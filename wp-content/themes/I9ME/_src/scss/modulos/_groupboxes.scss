@@ -5,8 +5,9 @@
 		background: #fff;
 		list-style: none;
 		@include respond-to(sm){
-		    margin-top: 30px;
-		    margin-bottom: 0;
+		    //margin-top: 30px;
+		    //margin-bottom: 0;
+		    padding:60px 0;
 			//margin: 0 0 60px;
 			//padding: 0 90px$i;
 		}
@@ -231,14 +232,19 @@
 
 	@include e('vermais'){
 		@include span(1);
-			margin: 30px 0;
+			//margin: 30px 0;
 			text-align: center;
 			line-height: 1px;
+			//height: 100px;
+			display: flex;
+			align-items: center;
+    		justify-content: center;
+    		
 			// a{
 			// 	@extend %borderradius;
 			// }
 			@include respond-to(sm){
-				margin: 60px 0;
+				//margin: 60px 0;
 			}
 			@include m('servicos'){
 				@include span(1);				

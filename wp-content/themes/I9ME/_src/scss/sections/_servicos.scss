@@ -2,22 +2,17 @@
 	$self : &;
 	@extend %boxFull;
    	position: relative;
-   	//margin-top: 30px$i;
-   		//background: $blue2;
-   		//margin-top: 90px;
-   		// @include m('interna'){
-   		//margin-top: 0;
-   		// }
+ 
   
 	@include e('layertop'){
 		@include span(1);
 		background: $blue2;
 		position: relative;
 		min-height: 200px;
-		margin-top: 30px;
+		//margin-top: 30px;
 		@include respond-to(sm){
 			min-height: 300px;
-			margin-top: 30px;
+			margin-top: 90px;
 
 		}
 
@@ -38,34 +33,14 @@
 	
 	//DESIGN
 	@include e('design'){
-		//@include span(1);
-		position: relative;
 		@extend %boxFull;
+		position: relative;
 		background: $white;
-		//display: inline-block;
-		//height: 670px;
-		// background-image: url(../images/bg_lapis.png);
-		// background-repeat: no-repeat;
-		// background-attachment: fixed;
-		//     background-position: 10% 66%;
-		//min-height: 899px;
-		//background-position: 10% 27%;
+		height: auto;
 			
-		@include respond-to(sm){
-			min-height: 726px;
-			// position: relative;
-	  //     &:before{
-	  //       content: '';
-	  //       position: absolute;
-	  //       margin: 0;
-	  //       background: url(../images/lapis-box.png)no-repeat;
-	  //       height: 46%;
-	  //       width: 100%;
-	  //       bottom: 0;
-
-	   
-	  //     }
-		}
+		// @include respond-to(sm){
+		// 	min-height: 726px;
+		// }
 
 		&:after{
 			content:'';
@@ -87,7 +62,8 @@
 		@extend %boxFull;
 		position: relative;
 		background-color: $gray1;
-		padding-bottom: 40px;
+		height: auto;
+		//padding-bottom: 40px;
 
 		&:before{
 			content: '';
@@ -100,211 +76,18 @@
 		    width: 100%;
 		    max-width: 100%;
 		}
-    	@include respond-to(sm){
-    		padding-bottom: 0px;
-    		//min-height: 760px;
-    		min-height: 726px;
+    	// @include respond-to(sm){
+    	// 	padding-bottom: 0px;
+    	// 	//min-height: 760px;
+    	// 	min-height: 726px;
     		
-    	}
+    	// }
 
 	}
 
-	// .title-web{
-	// 	@extend %boxFull;
-	// 	text-align: center;
- //    	margin: 60px 0;
- //    	@include respond-to(sm){
- //    		display: none;
- //    	}
- //    	h2{
- //    		color: #005193;
-	// 	    font-size: 33px;
-	// 	    margin: 0;
-	// 	    letter-spacing: 3px;
- //    	}
-	// }
-	// .subtitle-web{
-	// 	letter-spacing: 3px;
-	//     text-align: center;
-	//     font-size: 13px;
-	//     @include respond-to(sm){
- //    		display: none;
- //    	}
-	// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   // 		@include e('boxleft'){
-   // 			@include span(1);
-				
-			// 	@include respond-to(sm){
-   // 				    height: 247px;
-			// 	}
-			// 	@include respond-to(md){
-			// 		@include col(.5);
-			// 		margin-right: 0;
-			// 		position: relative;
-   //  				min-height: 784px;
-   //  				height: initial;
-   // 					//background-position: 20% 55%;
-			// 	}
-			// @include m('webMobile'){
-			// 		position: relative;
-   //  				top: 181px;
-			// 		//height: 840px;
-			// 	@include respond-to(sm){
-			// 		height: 700px;
-   //  				top: 248px;
-			// 	}
-			// 	@include respond-to(md){
-			// 		top: 0;
-			// 		height: 771px;
-			// 	}
-			// }
-				
-   // 		}
-
-   	// 	@include e('boxleft-web'){
-   	// 		@include span(1);
-
-   	// 		height: 100%;
-				// position: absolute;
-				// @include respond-to(md){
-				// 	@include span(.5);
-	   					
-
-				// }
-
-   	// 	}
-
-   	
-
-	// @include e('web-title'){
-	// 	display: block;
-	// 	height:60px;
-
-	// 	@include respond-to(md){
-	// 		display: none;
-	// 	}
-	// }
-   	
-
-		
-   		
-   		
-   // 		@include e('boxright-web'){
-			// @include span(1);
-	  //  			height: 100%;
-	  //  			position: absolute;
-	  //  			right:0;
-			// 	@include respond-to(md){
-	  //  				@include span(.5);
-			// 			float: right$i;
-	   				
-	  //  			}
-	   			
-   // 		}
-
-
-
-		
-
-	// @include e('boxinfo'){
-	// 	@include span(1);
-
-	// }
-
-	
-	
-
-
-
-
-
 }
 
-  .parallax {
-   // height: 536px; /* fallback for older browsers */
-    //height: 100vh;
-    //position: relative;
-    //bottom: -20px;
-    // overflow-x: hidden;
-    // overflow-y: auto;
-    // -webkit-perspective: 300px;
-    // perspective: 300px;
-    // width: 100%;
-    // float: left;
-  }
-
-  .parallax__group {
-   
-  }
-
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    transform: translateY(300px);
-    z-index: 4;
-    
-  	background: url(../images/lapis.png) no-repeat;
-	background-position: bottom center;
-    
-	
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-     transform: translateY(340px)translateX(-27px);
-     background: url(../images/sombra.png) no-repeat;
-     background-position: bottom;
-
-  }
-
-  .parallax__layer--deep {
-    -webkit-transform: translateZ(-600px) scale(3);
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
-  
-    background: url(../images/bg_lapis.png) no-repeat;
-    background-position: bottom;
-     //background-image: url(../images/bg_lapis.png);
-// background-position: center;
-  }
-
-   /* style the groups
-  --------------------------------------------- */
-
-  #group4 {
-    z-index: 2; /* slide under group 3 and 5 */
-  }
-  #group4 .parallax__layer--deep {
-    //background: rgb(184,223,101);
-
-  }
-
+ 
 
 .bloco-title{
 	text-align: left;

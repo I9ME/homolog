@@ -40,9 +40,9 @@
 	</div>
 <article class="page-sobre">
 	<section class="dna">
-		<div class="container">
-			<div class="boxes boxes--paralax">
-				<div class="boxes__box-left boxes__box-left--paralax"  id="group7">					
+		<div class="boxes">
+			<div class="container">
+				<div class="boxes__box-left">					
 					<header class="header-section header-section--area-design">
 						<div class="header-section__box header-section__box--design">
 							<span class="header-section__title header-section__title--design">
@@ -62,9 +62,9 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque
 						</p>
 					</header>  				
-			      	<div class="boxes__layer boxes__layer--back boxes__layer--back-pc">
-			        	<div class="boxes__pc"></div>
-			      	</div>		      	
+			      	
+			        	<figure class="boxes__pc"></figure>
+			      			      	
 				</div>
 				<div class="boxes__box-right">
 					<ul class="lista">
@@ -132,33 +132,14 @@
 		</div>
 	</section>
 	<section class="resultados">
-		<div class="container">
-			<div class="boxes boxes--reverse  boxes--paralax">
-				<div class="boxes__box-left boxes__box-left--paralax" id="group6">
-					<header class="header-section header-section--area-design header-section--area-web">
-						<div class="bloco-title bloco-title--right">
-							<span>NOSSOS</span>
-			        		<h2 class="title-web">RESULTADOS</h2>
-							<p class="subtitle-web">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.							</p>
-						</div>
-						<div class="header-section__box header-section__box--design">
-			        		<span class="header-section__title header-section__title--web">
-								<i class="icon-resultados"></i>
-							</span>
-						</div>
-						
-					</header>
-					<header class="title-servicos">
-						<h2>RESULTADOS</h2>
-						<p class="subtitle-servicos">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque
-						</p>
-					</header>  
-			      	<div class="boxes__layer boxes__layer--back-resultado">
-			        	<div class="boxes__resultado"></div>
-			      	</div>
-				</div>
+		<div class="boxes boxes--reverse">
+			<header class="title-servicos">
+				<h2>RESULTADOS</h2>
+				<p class="subtitle-servicos">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque
+				</p>
+			</header> 
+			<div class="container">
 				<div class="boxes__box-right">
 					<ul class="lista">
 										
@@ -217,20 +198,38 @@
 									<p class="lista__smallcontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tation ullamcorper suscipit lobortis nisl ut.</p>
 								</figcaption>
 							</figure>						
-						</li>
-					 	
+						</li>	
 					</ul>
+				</div>
+				<div class="boxes__box-left">
+					<header class="header-section header-section--area-design header-section--area-web">
+						<div class="bloco-title bloco-title--right">
+							<span>NOSSOS</span>
+			        		<h2 class="title-web">RESULTADOS</h2>
+							<p class="subtitle-web">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim recusandae doloremque et.							</p>
+						</div>
+						<div class="header-section__box header-section__box--design">
+			        		<span class="header-section__title header-section__title--web">
+								<i class="icon-resultados"></i>
+							</span>
+						</div>
+						
+					</header> 
+			      	
+			        <figure class="boxes__resultado"></figure>
+			      	
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="clientes">
+		<header class="header-section header-section--area-clientes">
+			<div class="header-section__box header-section__box--before-blue">
+				<h2 class="header-section__title header-section__title--before-blue">Clientes</h2>
+			</div>
+		</header>
 		<div class="container">		
-			<header class="header-section header-section--area-clientes">
-				<div class="header-section__box header-section__box--before-blue">
-					<h2 class="header-section__title header-section__title--before-blue">Clientes</h2>
-				</div>
-			</header>
 			<div class="clientes__carousel" id="clientes">
 				<?php get_template_part('templates/clientes','loop');?>
 			</div>

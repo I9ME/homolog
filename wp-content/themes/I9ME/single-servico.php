@@ -33,7 +33,7 @@
 	</div>
 	<section class="criacao">
 		<div class="criacao__lista-servicos">
-			<ul class="criacao__lista">
+			<ul class="criacao__lista criacao__lista--interna">
 				<?php
 
 				$tax_slug =  'tipo-de-servico';
