@@ -19,13 +19,14 @@
 				$bg_banner_single = '';
 			}
 	?>
+<div class="banner-single" <?php echo $bg_banner_single; ?>>
+	<header class="banner-single__header">
+		<h2 class="banner-single__title"><?php the_title() ?></h2>
+		<p class="banner-single__subtitle"><?php echo $resumoPost; ?></p>
+	</header>
+</div>
 <article class="page-servico">
-	<div class="banner-single" <?php echo $bg_banner_single; ?>>
-		<header class="banner-single__header">
-			<h2 class="banner-single__title"><?php the_title() ?></h2>
-			<p class="banner-single__subtitle"><?php echo $resumoPost; ?></p>
-		</header>
-	</div>
+	
 	<div class="breadcrumb">
 		<div class="container">
 			<?php get_template_part('breadcrumb');?>

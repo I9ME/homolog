@@ -1,9 +1,17 @@
+.page-servico{
+  @extend %boxFull;
+}
+
+.criacao-ou-redesenho-de-logotipos{
+    @extend %boxFull;
+}
 .criacao{
-	@extend %boxFull;
-		@include span(1);
+  @extend %boxFull;
+    @include span(1);
 
-
-
+    @include e('fase'){
+       @extend %boxFull;
+    }
 		@include e('lista-servicos'){
 		 	@include span(1);
 			background: #f7f7f7;

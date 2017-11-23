@@ -59,10 +59,11 @@ if ( has_post_thumbnail() ) {
 	</div> -->
 <article class="page-blog">
 	<section class="blog">
+		<header class="blog__header">
+			<h2 class="blog__header-title">últimas Postagens</h2>
+		</header>
 		<div class="container">
-			<header class="blog__header">
-				<h2 class="blog__header-title">últimas Postagens</h2>
-			</header>
+			
 			<ul class="blog__news">
 				
   				<?php
